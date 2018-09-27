@@ -4,6 +4,7 @@
 echo 'Usage: add.sh NUM1 NUM2'
 if [ $# -lt 2 ]; then
     echo "The number of arguments is insufficient"
+    exit 1
 else
     echo $(($1 + $2))
 fi
