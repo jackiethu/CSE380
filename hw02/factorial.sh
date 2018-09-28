@@ -3,7 +3,8 @@
 
 echo "Usage: factorial.sh NUM"
 if [ -z "$1" ]; then
-    echo "No argument supplied"
+    echo "No argument supplied" 1>&2
+    exit 1
 else
     n=$1
     fac=1
@@ -13,5 +14,5 @@ else
         n=$( expr $n - 1 )
     done
     
-    echo $fac
+    echo "$1! = $fac"
 fi
