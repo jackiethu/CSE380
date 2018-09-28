@@ -1,6 +1,8 @@
 #!/bin/bash
 # Generate triangle patterns
 
+echo "Usage: ./tri.sh"
+
 for i in {1..5}; do
     j=$(( 5 - i ))
     while [ $j -ge 1 ]; do
