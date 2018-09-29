@@ -21,4 +21,11 @@ for i in $(seq $N); do
         N_i=$(( N_i + 1 ))
     fi
 done
-echo $N $N_i $(echo "$N_i / $N" | bc -l)
+pi_estimate=$( echo "4 * $N_i / $N" | bc -l )
+pi=$( echo "4*a(1)" | bc -l )
+if [ $( echo "($pi_estimate - $pi) >= 0" | bc -l ) = 1 ]; then
+    e_rel=$( echo "($pi_estimate - $pi)/pi" | bc -l )
+else
+    e_rel=$( echo "($pi - $pi_estimate)/pi" | bc -l )
+fi
+echo $N $N_i $((N - N_i)) $pi_estimate $e_rel
