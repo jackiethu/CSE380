@@ -6,7 +6,7 @@ RandomDraw() {
     echo "scale=15; $RANDOM/32767" | bc -l
 }
 
-echo "Usage: ./pi.sh N_samples"
+# echo "Usage: ./pi.sh N_samples"
 # Monte Carlo sampling
 if [ -z "$1" ]; then
     echo "No arguments supplied" 1>&2

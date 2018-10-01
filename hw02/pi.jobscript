@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH -J pi.script
+#SBATCH -o pi.script.o%j
+#SBATCH -o pi.script.e%j
+#SBATCH -p skx-dev
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 01:00:00
+#SBATCH --mail-user=jiaqi@utexas.edu
+#SBATCH --mail-type=all
+#SBATCH -A cse38018
+
+for N in 10 100 500 1000 5000 10000 50000; do
+    /bin/time -f '%e' ./pi.sh $N
+done
