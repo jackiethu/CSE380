@@ -2,7 +2,7 @@
 
 #SBATCH -J pi.script
 #SBATCH -o pi.script.o%j
-#SBATCH -o pi.script.e%j
+#SBATCH -e pi.script.e%j
 #SBATCH -p skx-dev
 #SBATCH -N 1
 #SBATCH -n 1
