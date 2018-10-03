@@ -11,4 +11,6 @@
 #SBATCH --mail-type=all
 #SBATCH -A cse38018
 
-./pi.out
+for N in 10 100 500 1000 5000 10000 50000; do
+    ./pi.out $N
+done
