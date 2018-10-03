@@ -24,14 +24,32 @@
 ##SBATCH -A
 #------------------------------------------------------
 
+# set up enviroment
 module load launcher
 
 export LAUNCHER_PLUGIN_DIR=$LAUNCHER_DIR/plugins
 export LAUNCHER_RMI=SLURM
 export LAUNCHER_SCHED=interleaved
 export LAUNCHER_JOB_FILE=launcher_cmds.txt
- 
+
+# run parametric job launcher
 $LAUNCHER_DIR/paramrun
 
-cat out.o* > out.all
+# aggregate data
+cat out.o* > out.dat
 
+echo "# iter num_samples num_i pi relative_err time_accum" > iter.log
+awk ' {   
+    N_samples += $1
+    N_i += $2
+    time_accum += $6
+}
+END {
+    pi_estimate = 4 * N_i / N_samples
+    PI = 3.14159265358
+    err = pi_estimate - PI
+    e_rel = err > 0 ? err/PI : -err/PI
+    printf("pi_estimate = %f\n", pi_estimate)
+    printf("1 %d %d %f %g %g\n", N_samples, N_i, pi_estimate, e_rel, time_accum) >> "iter.log"
+}     
+' out.dat
