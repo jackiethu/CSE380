@@ -1,0 +1,1107 @@
+WARNING (10/02/18 23:55:21): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Warning: Permanently added 'c506-052' (ECDSA) to the list of known hosts.
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 8 completed in 1 seconds.
+Launcher: Job 10 completed in 1 seconds.
+Launcher: Job 39 completed in 1 seconds.
+Launcher: Job 3 completed in 1 seconds.
+Launcher: Job 13 completed in 1 seconds.
+Launcher: Job 21 completed in 1 seconds.
+Launcher: Job 45 completed in 1 seconds.
+Launcher: Job 32 completed in 1 seconds.
+Launcher: Job 30 completed in 1 seconds.
+Launcher: Job 44 completed in 1 seconds.
+Launcher: Job 11 completed in 1 seconds.
+Launcher: Job 26 completed in 1 seconds.
+Launcher: Job 28 completed in 1 seconds.
+Launcher: Job 27 completed in 1 seconds.
+Launcher: Job 1 completed in 1 seconds.
+Launcher: Job 41 completed in 1 seconds.
+Launcher: Job 25 completed in 1 seconds.
+Launcher: Job 47 completed in 1 seconds.
+Launcher: Job 16 completed in 1 seconds.
+Launcher: Job 6 completed in 1 seconds.
+Launcher: Job 36 completed in 1 seconds.
+Launcher: Job 22 completed in 1 seconds.
+Launcher: Job 2 completed in 1 seconds.
+Launcher: Job 7 completed in 1 seconds.
+Launcher: Job 17 completed in 1 seconds.
+Launcher: Job 20 completed in 1 seconds.
+Launcher: Job 29 completed in 1 seconds.
+Launcher: Job 18 completed in 1 seconds.
+Launcher: Job 23 completed in 1 seconds.
+Launcher: Job 14 completed in 1 seconds.
+Launcher: Job 5 completed in 1 seconds.
+Launcher: Job 19 completed in 1 seconds.
+Launcher: Job 12 completed in 1 seconds.
+Launcher: Job 40 completed in 1 seconds.
+Launcher: Job 42 completed in 1 seconds.
+Launcher: Job 37 completed in 1 seconds.
+Launcher: Job 31 completed in 1 seconds.
+Launcher: Job 33 completed in 1 seconds.
+Launcher: Job 34 completed in 1 seconds.
+Launcher: Job 43 completed in 1 seconds.
+Launcher: Task 9 done. Exiting.
+Launcher: Job 15 completed in 1 seconds.
+Launcher: Job 38 completed in 1 seconds.
+Launcher: Job 24 completed in 1 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Task 38 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 46 completed in 1 seconds.
+Launcher: Job 4 completed in 1 seconds.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 12 done. Exiting.
+Launcher: Task 20 done. Exiting.
+Launcher: Task 29 done. Exiting.
+Launcher: Job 9 completed in 1 seconds.
+Launcher: Task 31 done. Exiting.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 48 completed in 1 seconds.
+Launcher: Task 27 done. Exiting.
+Launcher: Task 0 done. Exiting.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 26 done. Exiting.
+Launcher: Task 40 done. Exiting.
+Launcher: Task 6 done. Exiting.
+Launcher: Task 46 done. Exiting.
+Launcher: Job 35 completed in 1 seconds.
+Launcher: Task 15 done. Exiting.
+Launcher: Task 16 done. Exiting.
+Launcher: Task 21 done. Exiting.
+Launcher: Task 28 done. Exiting.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Task 13 done. Exiting.
+Launcher: Task 22 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 5 done. Exiting.
+Launcher: Task 39 done. Exiting.
+Launcher: Task 10 done. Exiting.
+Launcher: Task 18 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 35 done. Exiting.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 41 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Task 14 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 30 done. Exiting.
+Launcher: Task 42 done. Exiting.
+Launcher: Task 23 done. Exiting.
+Launcher: Task 36 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Task 3 done. Exiting.
+Launcher: Task 4 done. Exiting.
+Launcher: Task 8 done. Exiting.
+Launcher: Task 47 done. Exiting.
+Launcher: Task 34 done. Exiting.
+Launcher: Task 37 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:24): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 13 completed in 0 seconds.
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Job 7 completed in 0 seconds.
+Launcher: Task 12 done. Exiting.
+Launcher: Job 17 completed in 0 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 6 done. Exiting.
+Launcher: Task 16 done. Exiting.
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Job 29 completed in 0 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 22 completed in 0 seconds.
+Launcher: Job 9 completed in 0 seconds.
+Launcher: Job 11 completed in 0 seconds.
+Launcher: Job 18 completed in 0 seconds.
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Job 6 completed in 0 seconds.
+Launcher: Job 10 completed in 0 seconds.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 15 completed in 0 seconds.
+Launcher: Job 25 completed in 0 seconds.
+Launcher: Job 27 completed in 0 seconds.
+Launcher: Task 8 done. Exiting.
+Launcher: Task 21 done. Exiting.
+Launcher: Task 10 done. Exiting.
+Launcher: Task 4 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 5 done. Exiting.
+Launcher: Task 9 done. Exiting.
+Launcher: Task 14 done. Exiting.
+Launcher: Job 12 completed in 0 seconds.
+Launcher: Job 8 completed in 0 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Job 28 completed in 0 seconds.
+Launcher: Task 26 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 7 done. Exiting.
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Job 26 completed in 0 seconds.
+Launcher: Job 20 completed in 0 seconds.
+Launcher: Task 27 done. Exiting.
+Launcher: Job 21 completed in 0 seconds.
+Launcher: Job 24 completed in 0 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Job 14 completed in 0 seconds.
+Launcher: Job 19 completed in 0 seconds.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 32 completed in 0 seconds.
+Launcher: Task 20 done. Exiting.
+Launcher: Job 30 completed in 0 seconds.
+Launcher: Job 23 completed in 0 seconds.
+Launcher: Task 23 done. Exiting.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Task 13 done. Exiting.
+Launcher: Task 31 done. Exiting.
+Launcher: Job 35 completed in 0 seconds.
+Launcher: Job 37 completed in 0 seconds.
+Launcher: Job 48 completed in 0 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Job 31 completed in 0 seconds.
+Launcher: Task 29 done. Exiting.
+Launcher: Task 22 done. Exiting.
+Launcher: Job 33 completed in 0 seconds.
+Launcher: Job 34 completed in 0 seconds.
+Launcher: Job 44 completed in 0 seconds.
+Launcher: Task 34 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 42 completed in 0 seconds.
+Launcher: Task 36 done. Exiting.
+Launcher: Task 47 done. Exiting.
+Launcher: Job 38 completed in 0 seconds.
+Launcher: Task 30 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 41 completed in 0 seconds.
+Launcher: Task 37 done. Exiting.
+Launcher: Job 36 completed in 0 seconds.
+Launcher: Task 41 done. Exiting.
+Launcher: Job 40 completed in 0 seconds.
+Launcher: Task 40 done. Exiting.
+Launcher: Job 46 completed in 0 seconds.
+Launcher: Task 35 done. Exiting.
+Launcher: Job 43 completed in 0 seconds.
+Launcher: Task 39 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Task 42 done. Exiting.
+Launcher: Job 16 completed in 0 seconds.
+Launcher: Task 15 done. Exiting.
+Launcher: Job 47 completed in 0 seconds.
+Launcher: Task 46 done. Exiting.
+Launcher: Job 39 completed in 0 seconds.
+Launcher: Task 38 done. Exiting.
+Launcher: Job 45 completed in 0 seconds.
+Launcher: Task 44 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:26): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 40 completed in 1 seconds.
+Launcher: Job 9 completed in 1 seconds.
+Launcher: Job 45 completed in 1 seconds.
+Launcher: Job 35 completed in 1 seconds.
+Launcher: Job 39 completed in 1 seconds.
+Launcher: Job 4 completed in 1 seconds.
+Launcher: Job 16 completed in 1 seconds.
+Launcher: Job 19 completed in 1 seconds.
+Launcher: Job 2 completed in 1 seconds.
+Launcher: Job 17 completed in 1 seconds.
+Launcher: Job 3 completed in 1 seconds.
+Launcher: Job 29 completed in 1 seconds.
+Launcher: Job 11 completed in 1 seconds.
+Launcher: Job 42 completed in 1 seconds.
+Launcher: Job 5 completed in 1 seconds.
+Launcher: Job 33 completed in 1 seconds.
+Launcher: Job 10 completed in 1 seconds.
+Launcher: Job 43 completed in 1 seconds.
+Launcher: Job 46 completed in 1 seconds.
+Launcher: Job 8 completed in 1 seconds.
+Launcher: Job 47 completed in 1 seconds.
+Launcher: Job 6 completed in 1 seconds.
+Launcher: Job 7 completed in 1 seconds.
+Launcher: Job 32 completed in 1 seconds.
+Launcher: Job 41 completed in 1 seconds.
+Launcher: Job 44 completed in 1 seconds.
+Launcher: Task 34 done. Exiting.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 8 done. Exiting.
+Launcher: Task 39 done. Exiting.
+Launcher: Task 38 done. Exiting.
+Launcher: Job 28 completed in 1 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Task 15 done. Exiting.
+Launcher: Task 1 done. Exiting.
+Launcher: Job 25 completed in 1 seconds.
+Launcher: Job 38 completed in 1 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Job 31 completed in 1 seconds.
+Launcher: Job 22 completed in 1 seconds.
+Launcher: Job 21 completed in 1 seconds.
+Launcher: Job 26 completed in 1 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Task 16 done. Exiting.
+Launcher: Job 27 completed in 1 seconds.
+Launcher: Job 48 completed in 1 seconds.
+Launcher: Task 10 done. Exiting.
+Launcher: Job 20 completed in 1 seconds.
+Launcher: Task 28 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Task 41 done. Exiting.
+Launcher: Job 13 completed in 1 seconds.
+Launcher: Job 23 completed in 1 seconds.
+Launcher: Task 42 done. Exiting.
+Launcher: Task 9 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Job 34 completed in 1 seconds.
+Launcher: Task 4 done. Exiting.
+Launcher: Job 18 completed in 1 seconds.
+Launcher: Job 36 completed in 1 seconds.
+Launcher: Task 5 done. Exiting.
+Launcher: Job 14 completed in 1 seconds.
+Launcher: Job 12 completed in 1 seconds.
+Launcher: Job 30 completed in 1 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Task 46 done. Exiting.
+Launcher: Task 6 done. Exiting.
+Launcher: Job 24 completed in 1 seconds.
+Launcher: Task 40 done. Exiting.
+Launcher: Task 31 done. Exiting.
+Launcher: Task 43 done. Exiting.
+Launcher: Task 27 done. Exiting.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 21 done. Exiting.
+Launcher: Task 30 done. Exiting.
+Launcher: Job 37 completed in 1 seconds.
+Launcher: Task 37 done. Exiting.
+Launcher: Task 20 done. Exiting.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 47 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Task 26 done. Exiting.
+Launcher: Task 12 done. Exiting.
+Launcher: Task 22 done. Exiting.
+Launcher: Task 35 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 13 done. Exiting.
+Launcher: Task 29 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 23 done. Exiting.
+Launcher: Task 36 done. Exiting.
+Launcher: Job 1 completed in 1 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 15 completed in 1 seconds.
+Launcher: Task 14 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:29): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Job 6 completed in 0 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 11 completed in 0 seconds.
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Task 5 done. Exiting.
+Launcher: Task 10 done. Exiting.
+Launcher: Task 3 done. Exiting.
+Launcher: Job 10 completed in 0 seconds.
+Launcher: Job 19 completed in 0 seconds.
+Launcher: Task 9 done. Exiting.
+Launcher: Job 29 completed in 0 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 18 completed in 0 seconds.
+Launcher: Job 20 completed in 0 seconds.
+Launcher: Job 21 completed in 0 seconds.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 23 completed in 0 seconds.
+Launcher: Job 37 completed in 0 seconds.
+Launcher: Task 20 done. Exiting.
+Launcher: Job 39 completed in 0 seconds.
+Launcher: Job 9 completed in 0 seconds.
+Launcher: Task 22 done. Exiting.
+Launcher: Task 36 done. Exiting.
+Launcher: Job 40 completed in 0 seconds.
+Launcher: Task 38 done. Exiting.
+Launcher: Task 8 done. Exiting.
+Launcher: Job 13 completed in 0 seconds.
+Launcher: Job 24 completed in 0 seconds.
+Launcher: Task 39 done. Exiting.
+Launcher: Task 12 done. Exiting.
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Task 23 done. Exiting.
+Launcher: Job 34 completed in 0 seconds.
+Launcher: Job 14 completed in 0 seconds.
+Launcher: Job 43 completed in 0 seconds.
+Launcher: Job 7 completed in 0 seconds.
+Launcher: Job 33 completed in 0 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 13 done. Exiting.
+Launcher: Job 46 completed in 0 seconds.
+Launcher: Job 35 completed in 0 seconds.
+Launcher: Task 42 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Task 6 done. Exiting.
+Launcher: Job 15 completed in 0 seconds.
+Launcher: Task 45 done. Exiting.
+Launcher: Task 34 done. Exiting.
+Launcher: Job 8 completed in 0 seconds.
+Launcher: Job 32 completed in 0 seconds.
+Launcher: Task 14 done. Exiting.
+Launcher: Job 27 completed in 0 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Job 31 completed in 0 seconds.
+Launcher: Job 25 completed in 0 seconds.
+Launcher: Task 31 done. Exiting.
+Launcher: Task 26 done. Exiting.
+Launcher: Job 12 completed in 0 seconds.
+Launcher: Task 30 done. Exiting.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 17 completed in 0 seconds.
+Launcher: Job 30 completed in 0 seconds.
+Launcher: Job 28 completed in 0 seconds.
+Launcher: Task 16 done. Exiting.
+Launcher: Job 41 completed in 0 seconds.
+Launcher: Task 29 done. Exiting.
+Launcher: Task 27 done. Exiting.
+Launcher: Task 40 done. Exiting.
+Launcher: Job 26 completed in 0 seconds.
+Launcher: Job 47 completed in 0 seconds.
+Launcher: Job 22 completed in 0 seconds.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 46 done. Exiting.
+Launcher: Task 21 done. Exiting.
+Launcher: Job 36 completed in 0 seconds.
+Launcher: Job 38 completed in 0 seconds.
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Task 35 done. Exiting.
+Launcher: Task 37 done. Exiting.
+Launcher: Task 4 done. Exiting.
+Launcher: Job 16 completed in 0 seconds.
+Launcher: Job 44 completed in 0 seconds.
+Launcher: Task 15 done. Exiting.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 45 completed in 0 seconds.
+Launcher: Job 48 completed in 0 seconds.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 47 done. Exiting.
+Launcher: Job 42 completed in 0 seconds.
+Launcher: Task 41 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:31): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 1 completed in 1 seconds.
+Launcher: Job 28 completed in 1 seconds.
+Launcher: Job 31 completed in 1 seconds.
+Launcher: Job 11 completed in 1 seconds.
+Launcher: Job 29 completed in 1 seconds.
+Launcher: Job 22 completed in 1 seconds.
+Launcher: Job 48 completed in 1 seconds.
+Launcher: Job 18 completed in 1 seconds.
+Launcher: Job 27 completed in 1 seconds.
+Launcher: Job 33 completed in 1 seconds.
+Launcher: Job 39 completed in 1 seconds.
+Launcher: Job 21 completed in 1 seconds.
+Launcher: Job 10 completed in 1 seconds.
+Launcher: Job 9 completed in 1 seconds.
+Launcher: Job 6 completed in 1 seconds.
+Launcher: Job 3 completed in 1 seconds.
+Launcher: Job 2 completed in 1 seconds.
+Launcher: Job 15 completed in 1 seconds.
+Launcher: Job 44 completed in 1 seconds.
+Launcher: Job 14 completed in 1 seconds.
+Launcher: Job 25 completed in 1 seconds.
+Launcher: Job 26 completed in 1 seconds.
+Launcher: Job 35 completed in 1 seconds.
+Launcher: Job 37 completed in 1 seconds.
+Launcher: Job 46 completed in 1 seconds.
+Launcher: Job 8 completed in 1 seconds.
+Launcher: Job 19 completed in 1 seconds.
+Launcher: Job 12 completed in 1 seconds.
+Launcher: Job 30 completed in 1 seconds.
+Launcher: Job 42 completed in 1 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Job 36 completed in 1 seconds.
+Launcher: Job 47 completed in 1 seconds.
+Launcher: Job 13 completed in 1 seconds.
+Launcher: Job 38 completed in 1 seconds.
+Launcher: Job 24 completed in 1 seconds.
+Launcher: Job 40 completed in 1 seconds.
+Launcher: Job 20 completed in 1 seconds.
+Launcher: Job 4 completed in 1 seconds.
+Launcher: Job 43 completed in 1 seconds.
+Launcher: Job 16 completed in 1 seconds.
+Launcher: Job 45 completed in 1 seconds.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 41 completed in 1 seconds.
+Launcher: Job 7 completed in 1 seconds.
+Launcher: Task 21 done. Exiting.
+Launcher: Task 30 done. Exiting.
+Launcher: Job 17 completed in 1 seconds.
+Launcher: Job 23 completed in 1 seconds.
+Launcher: Task 47 done. Exiting.
+Launcher: Task 10 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Task 26 done. Exiting.
+Launcher: Task 32 done. Exiting.
+Launcher: Job 34 completed in 1 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Task 20 done. Exiting.
+Launcher: Task 38 done. Exiting.
+Launcher: Task 14 done. Exiting.
+Launcher: Task 1 done. Exiting.
+Launcher: Task 5 done. Exiting.
+Launcher: Task 9 done. Exiting.
+Launcher: Job 32 completed in 1 seconds.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 5 completed in 1 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 13 done. Exiting.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Task 34 done. Exiting.
+Launcher: Task 7 done. Exiting.
+Launcher: Task 27 done. Exiting.
+Launcher: Task 36 done. Exiting.
+Launcher: Task 8 done. Exiting.
+Launcher: Task 29 done. Exiting.
+Launcher: Task 41 done. Exiting.
+Launcher: Task 18 done. Exiting.
+Launcher: Task 35 done. Exiting.
+Launcher: Task 12 done. Exiting.
+Launcher: Task 46 done. Exiting.
+Launcher: Task 23 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 37 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Task 39 done. Exiting.
+Launcher: Task 15 done. Exiting.
+Launcher: Task 42 done. Exiting.
+Launcher: Task 6 done. Exiting.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 40 done. Exiting.
+Launcher: Task 16 done. Exiting.
+Launcher: Task 3 done. Exiting.
+Launcher: Task 22 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 4 done. Exiting.
+Launcher: Task 31 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:34): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 7 completed in 0 seconds.
+Launcher: Job 6 completed in 0 seconds.
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Task 6 done. Exiting.
+Launcher: Task 5 done. Exiting.
+Launcher: Job 13 completed in 0 seconds.
+Launcher: Task 1 done. Exiting.
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Task 12 done. Exiting.
+Launcher: Task 4 done. Exiting.
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Job 18 completed in 0 seconds.
+Launcher: Job 9 completed in 0 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Job 30 completed in 0 seconds.
+Launcher: Task 8 done. Exiting.
+Launcher: Job 19 completed in 0 seconds.
+Launcher: Job 12 completed in 0 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Task 29 done. Exiting.
+Launcher: Job 21 completed in 0 seconds.
+Launcher: Job 24 completed in 0 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Job 31 completed in 0 seconds.
+Launcher: Job 20 completed in 0 seconds.
+Launcher: Task 11 done. Exiting.
+Launcher: Job 33 completed in 0 seconds.
+Launcher: Task 20 done. Exiting.
+Launcher: Task 23 done. Exiting.
+Launcher: Task 30 done. Exiting.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 11 completed in 0 seconds.
+Launcher: Task 32 done. Exiting.
+Launcher: Job 40 completed in 0 seconds.
+Launcher: Job 37 completed in 0 seconds.
+Launcher: Job 16 completed in 0 seconds.
+Launcher: Task 10 done. Exiting.
+Launcher: Task 39 done. Exiting.
+Launcher: Job 42 completed in 0 seconds.
+Launcher: Task 36 done. Exiting.
+Launcher: Task 15 done. Exiting.
+Launcher: Job 36 completed in 0 seconds.
+Launcher: Job 44 completed in 0 seconds.
+Launcher: Job 45 completed in 0 seconds.
+Launcher: Task 41 done. Exiting.
+Launcher: Job 46 completed in 0 seconds.
+Launcher: Task 43 done. Exiting.
+Launcher: Task 35 done. Exiting.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Job 27 completed in 0 seconds.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Job 43 completed in 0 seconds.
+Launcher: Job 17 completed in 0 seconds.
+Launcher: Task 26 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Task 42 done. Exiting.
+Launcher: Task 16 done. Exiting.
+Launcher: Job 41 completed in 0 seconds.
+Launcher: Job 38 completed in 0 seconds.
+Launcher: Job 34 completed in 0 seconds.
+Launcher: Job 28 completed in 0 seconds.
+Launcher: Task 40 done. Exiting.
+Launcher: Task 37 done. Exiting.
+Launcher: Job 32 completed in 0 seconds.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 27 done. Exiting.
+Launcher: Task 31 done. Exiting.
+Launcher: Job 25 completed in 0 seconds.
+Launcher: Job 14 completed in 0 seconds.
+Launcher: Job 26 completed in 0 seconds.
+Launcher: Job 39 completed in 0 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 13 done. Exiting.
+Launcher: Task 25 done. Exiting.
+Launcher: Task 38 done. Exiting.
+Launcher: Job 15 completed in 0 seconds.
+Launcher: Task 14 done. Exiting.
+Launcher: Job 35 completed in 0 seconds.
+Launcher: Job 10 completed in 0 seconds.
+Launcher: Task 34 done. Exiting.
+Launcher: Task 9 done. Exiting.
+Launcher: Job 47 completed in 0 seconds.
+Launcher: Task 46 done. Exiting.
+Launcher: Job 22 completed in 0 seconds.
+Launcher: Task 21 done. Exiting.
+Launcher: Job 23 completed in 0 seconds.
+Launcher: Task 22 done. Exiting.
+Launcher: Job 29 completed in 0 seconds.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 8 completed in 0 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Job 48 completed in 0 seconds.
+Launcher: Task 47 done. Exiting.
+Launcher: Done. Job exited without errors
+WARNING (10/02/18 23:55:36): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/05893/jiaqi/stampede2/homework/hw02/launcher
+   Processes per host: 48
+   Total processes:    48
+   Total jobs:         48
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 0 running job 1 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 3 running job 4 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 1 running job 2 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 6 running job 7 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 4 running job 5 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 10 running job 11 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 2 running job 3 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 21 running job 22 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 7 running job 8 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 5 running job 6 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 14 running job 15 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 15 running job 16 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 11 running job 12 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 13 running job 14 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 17 running job 18 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 9 running job 10 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 8 running job 9 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 12 running job 13 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 16 running job 17 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 22 running job 23 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 18 running job 19 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 20 running job 21 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 19 running job 20 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 28 running job 29 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 27 running job 28 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 38 running job 39 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 35 running job 36 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 24 running job 25 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 26 running job 27 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 29 running job 30 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 37 running job 38 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 31 running job 32 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 25 running job 26 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 46 running job 47 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 23 running job 24 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 39 running job 40 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 32 running job 33 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 34 running job 35 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 30 running job 31 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 40 running job 41 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 47 running job 48 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 44 running job 45 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 43 running job 44 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 33 running job 34 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 45 running job 46 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 41 running job 42 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 42 running job 43 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Task 36 running job 37 on c506-052.stampede2.tacc.utexas.edu (./pi.out 20000000 $LAUNCHER_JID > out.o$LAUNCHER_JID)
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Job 2 completed in 0 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Task 1 done. Exiting.
+Launcher: Job 6 completed in 0 seconds.
+Launcher: Job 7 completed in 0 seconds.
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Task 5 done. Exiting.
+Launcher: Job 22 completed in 0 seconds.
+Launcher: Task 6 done. Exiting.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 8 completed in 0 seconds.
+Launcher: Task 4 done. Exiting.
+Launcher: Task 21 done. Exiting.
+Launcher: Job 15 completed in 0 seconds.
+Launcher: Task 7 done. Exiting.
+Launcher: Job 12 completed in 0 seconds.
+Launcher: Job 34 completed in 0 seconds.
+Launcher: Job 18 completed in 0 seconds.
+Launcher: Job 16 completed in 0 seconds.
+Launcher: Job 10 completed in 0 seconds.
+Launcher: Task 14 done. Exiting.
+Launcher: Task 11 done. Exiting.
+Launcher: Task 33 done. Exiting.
+Launcher: Task 17 done. Exiting.
+Launcher: Job 19 completed in 0 seconds.
+Launcher: Task 9 done. Exiting.
+Launcher: Task 15 done. Exiting.
+Launcher: Job 17 completed in 0 seconds.
+Launcher: Job 28 completed in 0 seconds.
+Launcher: Job 21 completed in 0 seconds.
+Launcher: Job 14 completed in 0 seconds.
+Launcher: Task 16 done. Exiting.
+Launcher: Task 27 done. Exiting.
+Launcher: Job 20 completed in 0 seconds.
+Launcher: Task 18 done. Exiting.
+Launcher: Task 20 done. Exiting.
+Launcher: Job 29 completed in 0 seconds.
+Launcher: Job 39 completed in 0 seconds.
+Launcher: Task 13 done. Exiting.
+Launcher: Job 27 completed in 0 seconds.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 36 completed in 0 seconds.
+Launcher: Task 38 done. Exiting.
+Launcher: Task 28 done. Exiting.
+Launcher: Job 47 completed in 0 seconds.
+Launcher: Job 32 completed in 0 seconds.
+Launcher: Job 40 completed in 0 seconds.
+Launcher: Task 26 done. Exiting.
+Launcher: Job 26 completed in 0 seconds.
+Launcher: Task 35 done. Exiting.
+Launcher: Job 30 completed in 0 seconds.
+Launcher: Task 46 done. Exiting.
+Launcher: Task 31 done. Exiting.
+Launcher: Job 24 completed in 0 seconds.
+Launcher: Job 45 completed in 0 seconds.
+Launcher: Task 39 done. Exiting.
+Launcher: Job 48 completed in 0 seconds.
+Launcher: Task 25 done. Exiting.
+Launcher: Job 31 completed in 0 seconds.
+Launcher: Task 29 done. Exiting.
+Launcher: Job 41 completed in 0 seconds.
+Launcher: Task 23 done. Exiting.
+Launcher: Job 44 completed in 0 seconds.
+Launcher: Task 44 done. Exiting.
+Launcher: Task 47 done. Exiting.
+Launcher: Task 30 done. Exiting.
+Launcher: Task 40 done. Exiting.
+Launcher: Job 42 completed in 0 seconds.
+Launcher: Task 43 done. Exiting.
+Launcher: Job 38 completed in 0 seconds.
+Launcher: Job 37 completed in 0 seconds.
+Launcher: Task 41 done. Exiting.
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Task 37 done. Exiting.
+Launcher: Task 36 done. Exiting.
+Launcher: Task 3 done. Exiting.
+Launcher: Job 25 completed in 0 seconds.
+Launcher: Job 46 completed in 0 seconds.
+Launcher: Task 24 done. Exiting.
+Launcher: Task 45 done. Exiting.
+Launcher: Job 23 completed in 0 seconds.
+Launcher: Task 22 done. Exiting.
+Launcher: Job 35 completed in 0 seconds.
+Launcher: Task 34 done. Exiting.
+Launcher: Job 33 completed in 0 seconds.
+Launcher: Task 32 done. Exiting.
+Launcher: Job 13 completed in 0 seconds.
+Launcher: Task 12 done. Exiting.
+Launcher: Job 11 completed in 0 seconds.
+Launcher: Task 10 done. Exiting.
+Launcher: Job 43 completed in 0 seconds.
+Launcher: Task 42 done. Exiting.
+Launcher: Job 9 completed in 0 seconds.
+Launcher: Task 8 done. Exiting.
+Launcher: Done. Job exited without errors

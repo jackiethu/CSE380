@@ -18,7 +18,7 @@
 #SBATCH -n 48
 #SBATCH -p skx-dev
 #SBATCH -o Parametric.o%j
-#SBATCH -t 00:00:30
+#SBATCH -t 00:10:00
 #          <------ Account String ----->
 # <--- (Use this ONLY if you have MULTIPLE accounts) --->
 ##SBATCH -A
@@ -37,7 +37,6 @@ $LAUNCHER_DIR/paramrun
 
 # aggregate data
 cat out.o* > out.dat
-
 echo "# iter num_samples num_i pi relative_err time_accum" > iter.log
 awk ' {   
     N_samples += $1
@@ -49,7 +48,38 @@ END {
     PI = 3.14159265358
     err = pi_estimate - PI
     e_rel = err > 0 ? err/PI : -err/PI
-    printf("pi_estimate = %f\n", pi_estimate)
     printf("1 %d %d %f %g %g\n", N_samples, N_i, pi_estimate, e_rel, time_accum) >> "iter.log"
 }     
 ' out.dat
+
+# check relative error
+iStop=$( awk 'END {if ($5 < 5e-6) print 0; else print 1}' iter.log )
+while [ $iStop != 0 ]; do # if e_rel is too large, iterate
+    # run parametric job launcher to compute additional 960,000,000 samples
+    $LAUNCHER_DIR/paramrun
+    # aggregate data
+    cat out.o* > out.dat
+    tac iter.log | head -1 > last_result
+    awk ' 
+    FNR == NR {
+        N_samples = $2
+        N_i = $3
+        time_accum = $6
+        next
+    }
+    {   
+        N_samples += $1
+        N_i += $2
+        time_accum += $6
+    }
+    END {
+        pi_estimate = 4 * N_i / N_samples
+        PI = 3.14159265358
+        err = pi_estimate - PI
+        e_rel = err > 0 ? err/PI : -err/PI
+        printf("1 %d %d %f %g %g\n", N_samples, N_i, pi_estimate, e_rel, time_accum) >> "iter.log"
+    }     
+    ' last_result out.dat
+
+    iStop=$( awk 'END {if ($5 < 5e-6) print 0; else print 1}' iter.log )
+done
