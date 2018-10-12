@@ -1,5 +1,5 @@
 # Files
-EXEC := random
+EXEC := tardis
 SRC  := $(wildcard *.c)
 OBJ  := $(patsubst %.c,%.o,$(SRC))
 
