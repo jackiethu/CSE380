@@ -4,33 +4,36 @@ program main
     use Err_Function_Mod
     use Str2int_Mod
     implicit none
-    integer :: n = 10 ! number of intervals used for integration
-    character(len = 10) :: str ! temporary variable
+    integer :: n ! number of intervals used for integration
+    character(len = 10) :: str ! used to read cmd line arguments
     integer :: str_Len ! length for str
     character(len = 10) :: rule
     real(kind = 8), allocatable :: datas(:)
     integer :: error ! error indicator
-    real(kind = 8) :: ans ! integration result
+    real(kind = 8) :: erf ! erf(1), the integration result
 
+    write(*,*) "Usage: ./integrate N rule(trapezoid or Simpson)"
     ! read in command line argument
     call get_command_argument(1, str, str_Len, error)
     if (error /= 0) stop "Cannot get the 1st argument"
     call Str2int(str(1:str_Len), n, error)
     call get_command_argument(2, str, str_Len, error)
     if (error /= 0) stop "Cannot get the 2nd argument"
-    rule(1:str_Len) = str
+    rule = str
     
-    ! allocate memory for datas
-    allocate(datas(0:n), stat = error)
-    if (error /= 0) stop "Allocation error."
-    
-    call Generate_Data(datas, n, Err_Function)
-    ans = Integral_Trapezoid(datas, n)
+    ! select integration rule based on 2nd command line argument
+    select case(trim(rule))
+    case("trapezoid")
+        erf = Integral_Trapezoid(Err_Function, n)
+    case("Simpson")
+        erf = Integral_Simpson(Err_Function, n)
+    case default
+        stop "invalid integration rule"
+    end select
 
+    ! output results
     write(*, *) "n = ", n
     write(*, *) "integration rule: ", rule
-    write(*, *) "erf(1) = ", ans
-
-    deallocate(datas)
+    write(*, *) "erf(1) = ", erf
 
 end program 
