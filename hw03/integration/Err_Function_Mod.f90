@@ -3,11 +3,11 @@ module Err_Function_Mod
     implicit none
     private
     public Err_Function
-    real(kind = 8), parameter :: PI = 3.1415926535897932_8
+    real, parameter :: PI = 3.1415926535897932
 
 contains
-    real(kind = 8) function Err_Function(x)
-        real(kind = 8), intent(in) :: x
+    real function Err_Function(x)
+        real, intent(in) :: x
         Err_Function = 2.0/sqrt(PI)*exp(-x*x)
         return
     end function

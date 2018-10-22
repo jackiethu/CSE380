@@ -5,14 +5,14 @@ module Integral_Mod
 contains
 
     ! Integration using trapezoidal rule
-    real(kind = 8) function Integral_Trapezoid(Func, n)
+    real function Integral_Trapezoid(Func, n)
         implicit none
-        real(kind = 8), external :: Func ! function to integrate
+        real, external :: Func ! function to integrate
         integer, intent(in) :: n ! number of intervals
-        real(kind = 8) :: x ! x coordinate to evaluate Func
-        real(kind = 8) :: dx ! mesh size
+        real :: x ! x coordinate to evaluate Func
+        real :: dx ! mesh size
         integer :: i ! temp variable for loop use
-        real(kind = 8) :: sum = 0.0
+        real :: sum = 0.0
 
         dx = 1.0 / real(n)
         x = 0.0
@@ -25,14 +25,14 @@ contains
     end function
     
     ! Integration using Simpson's rule
-    real(kind = 8) function Integral_Simpson(Func, n)
+    real function Integral_Simpson(Func, n)
         implicit none
-        real(kind =8), external :: Func ! function to integrate
+        real, external :: Func ! function to integrate
         integer, intent(in) :: n ! number of intervals
-        real(kind = 8) :: x ! x coordinate to evaluate Func
-        real(kind = 8) :: dx ! mesh size
+        real :: x ! x coordinate to evaluate Func
+        real :: dx ! mesh size
         integer :: i ! temp variable for loop use
-        real(kind = 8) :: sum = 0.0
+        real :: sum = 0.0
 
         dx = 1.0 / real(n)
         x = 0.0

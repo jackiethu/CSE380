@@ -9,8 +9,8 @@ program main
     integer :: str_Len ! length for str
     character(len = 10) :: rule
     integer :: error ! error indicator
-    real(kind = 8) :: erf ! erf(1), the integration result
-    real(kind = 8), parameter :: erf_tab = 0.84270079295_8
+    real :: erf ! erf(1), the integration result
+    real, parameter :: erf_tab = 0.84270079295
 
     !write(*,*) "Usage: ./integrate N rule(trapezoid or Simpson)"
     ! read in command line argument
@@ -37,6 +37,6 @@ program main
     !write(*, *) "erf(1) = ", erf
     !write(*, *) "absolute error: ", abs(erf - erf_tab)
 
-    write(*, "(I5, 1X, E15.7)") n, abs(erf - erf_tab)
+    write(*, "(I6, 1X, E15.7)") n, abs(erf - erf_tab)
 
 end program

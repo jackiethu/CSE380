@@ -7,7 +7,7 @@ OBJ      := $(patsubst %.f90, %.o, $(SRC))
 
 # Options
 FC      := ifort
-FCFLAGS := -g -check bounds
+FCFLAGS := -r8 -g -check bounds
 
 # Rules
 $(EXEC): $(OBJ)
