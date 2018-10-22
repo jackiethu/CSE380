@@ -3,7 +3,7 @@ module Err_Function_Mod
     implicit none
     private
     public Err_Function
-    real(kind = 8), parameter :: PI = 3.1415926535897932
+    real(kind = 8), parameter :: PI = 3.1415926535897932_8
 
 contains
     real(kind = 8) function Err_Function(x)

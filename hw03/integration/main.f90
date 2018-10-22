@@ -8,11 +8,11 @@ program main
     character(len = 10) :: str ! used to read cmd line arguments
     integer :: str_Len ! length for str
     character(len = 10) :: rule
-    real(kind = 8), allocatable :: datas(:)
     integer :: error ! error indicator
     real(kind = 8) :: erf ! erf(1), the integration result
+    real(kind = 8), parameter :: erf_tab = 0.84270079295_8
 
-    write(*,*) "Usage: ./integrate N rule(trapezoid or Simpson)"
+    !write(*,*) "Usage: ./integrate N rule(trapezoid or Simpson)"
     ! read in command line argument
     call get_command_argument(1, str, str_Len, error)
     if (error /= 0) stop "Cannot get the 1st argument"
@@ -32,8 +32,11 @@ program main
     end select
 
     ! output results
-    write(*, *) "n = ", n
-    write(*, *) "integration rule: ", rule
-    write(*, *) "erf(1) = ", erf
+    !write(*, *) "n = ", n
+    !write(*, *) "integration rule: ", rule
+    !write(*, *) "erf(1) = ", erf
+    !write(*, *) "absolute error: ", abs(erf - erf_tab)
 
-end program 
+    write(*, "(I5, 1X, E15.7)") n, abs(erf - erf_tab)
+
+end program
