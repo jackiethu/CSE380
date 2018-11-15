@@ -7,19 +7,20 @@ module Sparse_Matrix_Mod
         integer, allocatable :: indices(:) ! colomn indices for nonzero entries
         real, allocatable :: values(:) ! nonzero values
         contains
-            procedure, pass :: Init_Row
+            procedure :: Init => Init_Row
     end type Sparse_Row_Type
 
     type :: Sparse_Matrix_Type ! only support square matrix
         integer :: n ! the dimension of the matrix is n*n
         type(Sparse_Row_Type), allocatable :: row(:)
         contains
-            procedure, pass :: Init_Matrix
+            procedure :: Init => Init_Matrix
     end type Sparse_Matrix_Type
 
 contains
 
     subroutine Init_Row(this, num_Nonzero, indices, values)
+        implicit none
         class(Sparse_Row_Type), intent(out) :: this
         integer, intent(in) :: num_Nonzero
         integer, intent(in) :: indices(num_Nonzero)
@@ -36,6 +37,7 @@ contains
     end subroutine Init_Row
 
     subroutine Init_Matrix(this, n)
+        implicit none
         class(Sparse_Matrix_Type), intent(out) :: this
         integer, intent(in) :: n
         integer :: ierr ! error indicator
@@ -48,24 +50,24 @@ contains
 end module Sparse_Matrix_Mod
 
 
-program test
-    use Sparse_Matrix_Mod
-    implicit none
-
-    type(Sparse_Matrix_Type) :: mat
-    integer :: i
-    integer :: indices1(2) = [1, 2], indices2(1) = 1
-    real :: values1(2) = [1.2, 2.5], values2(1) = 3.6
-    
-    call mat%Init_Matrix(2)
-    call mat%row(1)%Init_Row(2, indices1, values1)
-    call mat%row(2)%Init_Row(1, indices2, values2)
-    do i = 1, 2
-        print *, "row", i
-        print *, "num_Nonzero: ", mat%row(i)%num_Nonzero
-        print *, "indices: ", mat%row(i)%indices
-        print *, "values: ", mat%row(i)%values
-        print *
-    end do
-
-end program test
+!program test
+!    use Jacobi_GS_Mod
+!    implicit none
+!
+!    type(Sparse_Matrix_Type) :: mat
+!    integer :: i
+!    integer :: indices1(2) = [1, 2], indices2(1) = 1
+!    real :: values1(2) = [1.2, 2.5], values2(1) = 3.6
+!    
+!    call mat%Init(2)
+!    call mat%row(1)%Init(2, indices1, values1)
+!    call mat%row(2)%Init(1, indices2, values2)
+!    do i = 1, 2
+!        print *, "row", i
+!        print *, "num_Nonzero: ", mat%row(i)%num_Nonzero
+!        print *, "indices: ", mat%row(i)%indices
+!        print *, "values: ", mat%row(i)%values
+!        print *
+!    end do
+!
+!end program test
