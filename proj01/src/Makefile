@@ -1,6 +1,6 @@
 # Files
 EXEC     := test
-PROGRAM  := test_iteration.o # name for main program (.o file)
+PROGRAM  := main.o # name for main program (.o file)
 SRC_MOD  := $(wildcard *_Mod.f90)
 OBJ_MOD  := $(addprefix ../obj/, $(patsubst %.f90, %.o, $(SRC_MOD)))
 # $(info OBJ_MOD = $(OBJ_MOD))
