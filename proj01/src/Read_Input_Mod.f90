@@ -40,6 +40,17 @@ contains
             print *, "unable to close", filename
             stop
         end if
+
+        ! in debug mode, output control parameters
+        if (debug_Flag == 1) then
+            write(*, "(A20, I2)") "dimen: ", dimen
+            write(*, "(A20, I2)") "order: ", order
+            write(*, "(A20, I2)") "solver_Flag: ", solver_Flag
+            write(*, "(A20, I6)") "num_Mesh: ", num_Mesh
+            write(*, "(A20, I2)") "verification_Flag: ", verification_Flag
+            write(*, "(A20, I2)") "debug_Flag: ", debug_Flag
+        end if
+
     end subroutine Read_Input
 
 end module Read_Input_Mod

@@ -1,4 +1,5 @@
-! module defining sparse matrix & initializing functions
+! module defining sparse matrix, initializing functions,
+!     and a subroutine to output sparse matrix
 module Sparse_Matrix_Mod
     implicit none
 
@@ -15,6 +16,7 @@ module Sparse_Matrix_Mod
         type(Sparse_Row_Type), allocatable :: row(:)
         contains
             procedure :: Init => Init_Matrix
+            procedure :: Print_Matrix
     end type Sparse_Matrix_Type
 
 contains
@@ -46,6 +48,19 @@ contains
         allocate( this%row(n), stat = ierr )
         if (ierr /= 0) stop "Allocation error: Init_Matrix"
     end subroutine Init_Matrix
+
+    subroutine Print_Matrix(this)
+        implicit none
+        class(Sparse_Matrix_Type), intent(in) :: this
+        integer :: i, j, k
+        do i = 1, this%n ! loop through rows of matrix
+            do k = 1, this%row(i)%num_Nonzero
+                j = this%row(i)%indices(k)
+                write(*,"('(', I3, ',', I3, '):', F6.1)") &
+                    i, j, this%row(i)%values(k)
+            end do
+        end do
+    end subroutine Print_Matrix
 
 end module Sparse_Matrix_Mod
 

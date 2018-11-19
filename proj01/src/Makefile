@@ -1,25 +1,52 @@
-# Files
-EXEC     := test
-PROGRAM  := main.o # name for main program (.o file)
-SRC_MOD  := $(wildcard *_Mod.f90)
-OBJ_MOD  := $(addprefix ../obj/, $(patsubst %.f90, %.o, $(SRC_MOD)))
-# $(info OBJ_MOD = $(OBJ_MOD))
-SRC      := $(wildcard *.f90)
-OBJ      := $(patsubst %.f90, %.o, $(SRC))
-OBJECTS  := $(addprefix ../obj/, $(OBJ))
-# $(info OBJECTS = $(OBJECTS))
+# Find all source files, create a list of corresponding object files
+SRCS := $(wildcard *.f90)
+OBJS := $(patsubst %.f90,%.o,$(SRCS))
 
-# Options
+# Ditto for mods (They will be in both lists)
+MODS     := $(wildcard *_Mod.f90)
+MOD_OBJS := $(patsubst %.f90,%.o,$(MODS))
+
+# Complier/Linker settings
 FC      := ifort
-FCFLAGS := -module ../obj -r8 -g -check all -warn all -fpe0
-# Rules
-$(EXEC): $(OBJECTS) 
-	$(FC) $(FCFLAGS) -o $@ $^
-../obj/$(PROGRAM): $(OBJ_MOD)
-../obj/%.o: %.f90
-	$(FC) $(FCFLAGS) -c $< -o $@
+FLFLAGS := -g
+FCFLAGS := -g -c -check all -warn all -fpe0 -r8
+PROGRAM := main
+PRG_OBJ := $(PROGRAM).o
 
-# Phony targets
-.PHONY: clean
+# Clean the suffixes
+.SUFFIXES:
+
+# Set the suffixes we are interested in
+.SUFFIXES: .f90 .o
+
+# make without parameters will make first target found
+default: $(PROGRAM)
+
+# Compiler steps for all objects
+$(OBJS) : %.o : %.f90
+	$(FC) $(FCFLAGS) -o $@ $<
+
+# Linker
+$(PROGRAM) : $(OBJS)
+	$(FC) $(FLFLAGS) -o $@ $^
+
+debug:
+	@echo "SRCS = $(SRCS)"
+	@echo "OBJS = $(OBJS)"
+	@echo "MODS = $(MODS)"
+	@echo "MOD_OBJS = $(MOD_OBJS)"
+	@echo "PROGRAM = $(PROGRAM)"
+	@echo "PRG_OBJ = $(PRG_OBJ)"
+
 clean:
-	rm -f $(EXEC) ../obj/*.mod $(OBJECTS)
+	rm -f $(OBJS) $(PROGRAM)
+
+# PHONY targets
+.PHONY: debug default clean
+
+# Dependencies
+$(PRG_OBJ) : $(MOD_OBJS)
+Read_Input_Mod.o : Control_Parameters_Mod.o
+Initialize_Mod.o : Control_Parameters_Mod.o Solve_Common_Mod.o Get_Matrix_Mod.o
+Solve_Common_Mod.o : Sparse_Matrix_Mod.o
+Get_Matrix_Mod.o : Sparse_Matrix_Mod.o
