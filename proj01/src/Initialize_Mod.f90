@@ -29,7 +29,7 @@ contains
             if (order == 2) then
                 call Get_Matrix_1D_Order2
             else if (order == 4) then
-            !    call Get_Matrix_1D_Order4
+                call Get_Matrix_1D_Order4
             else
                 stop "discretization order must be 2 or 4"
             end if
