@@ -7,8 +7,13 @@ program main
     ! open control file "input.dat" and read control parameters
     call Read_Input
 
-    ! initialize matrix and vectors
+    ! initialize matrix and vectors A, x, b
     call Initialize
+
+    ! solve the linear system Ax = b
+
+
+    ! postprocessing
 
 
 end program main
