@@ -53,10 +53,12 @@ contains
         implicit none
         class(Sparse_Matrix_Type), intent(in) :: this
         integer :: i, j, k
+
+        write(*,"('-----MATRIX A-----')")
         do i = 1, this%n ! loop through rows of matrix
             do k = 1, this%row(i)%num_Nonzero
                 j = this%row(i)%indices(k)
-                write(*,"('(', I3, ',', I3, '):', F6.1)") &
+                write(*,"('(', I3, ',', I3, '):', F7.4)") &
                     i, j, this%row(i)%values(k)
             end do
         end do
