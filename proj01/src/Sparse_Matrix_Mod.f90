@@ -54,7 +54,7 @@ contains
         class(Sparse_Matrix_Type), intent(in) :: this
         integer :: i, j, k
 
-        write(*,"('-----MATRIX A-----')")
+        write(*,"('----- MATRIX A -----')")
         do i = 1, this%n ! loop through rows of matrix
             do k = 1, this%row(i)%num_Nonzero
                 j = this%row(i)%indices(k)

@@ -43,7 +43,7 @@ contains
 
         ! in debug mode, output control parameters
         if (debug_Flag == 1) then
-            write(*, "('-----CONTROL PARAMETERS-----')")
+            write(*, "('----- CONTROL PARAMETERS -----')")
             write(*, "(A20, I2)") "dimen: ", dimen
             write(*, "(A20, I2)") "order: ", order
             write(*, "(A20, I2)") "solver_Flag: ", solver_Flag
