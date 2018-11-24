@@ -7,9 +7,11 @@ MODS     := $(wildcard *_Mod.f90)
 MOD_OBJS := $(patsubst %.f90,%.o,$(MODS))
 
 # Complier/Linker settings
+PKGPATH := /work/00161/karl/stampede2/public
 FC      := ifort
-FLFLAGS := -g
-FCFLAGS := -g -O0 -check all -warn all -fpe0 -r8
+FLFLAGS := -g -L$(PKGPATH)/grvy-intel-0.34/lib
+FCFLAGS := -g -O0 -check all -warn all -fpe0 -r8 -I$(PKGPATH)/grvy-intel-0.34/lib
+LDLIBS  := -lgrvy -lgrvyf
 PROGRAM := main
 PRG_OBJ := $(PROGRAM).o
 
@@ -29,7 +31,8 @@ $(OBJS): %.o: %.f90
 
 # Linker
 $(PROGRAM): $(OBJS)
-	$(FC) $(FLFLAGS) -o $@ $^
+	$(FC) $(FLFLAGS) $(LDLIBS) -o $@ $^ \
+		-Wl,-rpath,$(PKGPATH)/grvy-intel-0.34/lib
 
 debug:
 	@echo "SRCS = $(SRCS)"

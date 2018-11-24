@@ -6,50 +6,47 @@ contains
 
     subroutine Read_Input ! read control parameters from file
         use Control_Parameters_Mod
+        use grvy
         implicit none
-        integer, parameter :: fileid = 10 ! input file unit
         character(len = 20) :: filename = "input.dat"
-        logical :: alive ! store if file exists
-        integer :: stat ! iostat
+        integer :: flag
 
-        ! check if input file exists
-        inquire(file = filename, exist = alive)
-        if (.not. alive) then
-            print *, filename, "doesn't exist"
-            stop
-        end if
+        ! initialize/read the file
+        call grvy_input_fopen(filename, flag)
 
-        ! open input file
-        open(unit = fileid, file = filename, status = 'old', iostat = stat)
-        if (stat /= 0) then
-            print *, "unable to open", filename
-            stop
-        end if
-        
-        ! read data from input file
-        read(fileid, *) dimen
-        read(fileid, *) order
-        read(fileid, *) solver_Flag
-        read(fileid, *) num_Mesh
-        read(fileid, *) verification_Flag
-        read(fileid, *) debug_Flag
+        ! read variables
+        call grvy_input_fread_int("dimen", dimen, flag)
+        call grvy_input_fread_double("side_Length", side_Length, flag)
+        call grvy_input_fread_int("num_Mesh", num_Mesh, flag)
 
-        ! close input file
-        close(fileid, iostat = stat)
-        if (stat /= 0) then
-            print *, "unable to close", filename
-            stop
-        end if
+        call grvy_input_fread_int("order", order, flag)
+        call grvy_input_fread_int("solver_Flag", solver_Flag, flag)
+
+        call grvy_input_fread_int("verification_Flag", verification_Flag, flag)
+        call grvy_input_fread_int("debug_Flag", debug_Flag, flag)
+
+        call grvy_input_fread_double("k_0", k_0, flag)
+
+        call grvy_input_fread_double("eps", eps, flag)
+        call grvy_input_fread_int("max_iter", max_iter, flag)
 
         ! in debug mode, output control parameters
         if (debug_Flag == 1) then
             write(*, "('----- CONTROL PARAMETERS -----')")
             write(*, "(A20, I2)") "dimen: ", dimen
+            write(*, "(A20, F6.3)") "side_Length: ", side_Length
+            write(*, "(A20, I6)") "num_Mesh: ", num_Mesh
+
             write(*, "(A20, I2)") "order: ", order
             write(*, "(A20, I2)") "solver_Flag: ", solver_Flag
-            write(*, "(A20, I6)") "num_Mesh: ", num_Mesh
+
             write(*, "(A20, I2)") "verification_Flag: ", verification_Flag
             write(*, "(A20, I2)") "debug_Flag: ", debug_Flag
+
+            write(*, "(A20, F6.3)") "k_0: ", k_0
+            write(*, "(A20, E10.3)") "eps: ", eps
+            write(*, "(A20, I6)") "max_iter: ", max_iter
+            
             write(*,*)
         end if
 
