@@ -1,4 +1,4 @@
-dimen = 1               # dimension of the problem (1 for 1D, 2 for 2D)
+dimen = 2               # dimension of the problem (1 for 1D, 2 for 2D)
 side_Length = 1.0       # side length of domain
 num_Mesh = 3            # number of meshes in one direction
 

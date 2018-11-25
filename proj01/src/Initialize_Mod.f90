@@ -68,7 +68,9 @@ contains
             call Get_Source_2D            
 
         case default
+
             stop "invalid dimension"
+
         end select
 
         ! in debug mode, output matrix A and RHS term b
@@ -79,7 +81,7 @@ contains
             ! output b
             write(*, "('----- RHS: b -----')")
             do i = 1, size(b)
-                write(*, "('b(', I2, ') = ', E13.7)") i, b(i)
+                write(*, "('b(', I2, ') = ', E13.6)") i, b(i)
             end do
             write(*, *)
         end if
