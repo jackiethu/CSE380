@@ -62,6 +62,7 @@ contains
                     i, j, this%row(i)%values(k)
             end do
         end do
+        write(*,*)
     end subroutine Print_Matrix
 
 end module Sparse_Matrix_Mod

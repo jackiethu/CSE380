@@ -6,21 +6,19 @@ OBJS := $(patsubst %.f90,%.o,$(SRCS))
 MODS     := $(wildcard *_Mod.f90)
 MOD_OBJS := $(patsubst %.f90,%.o,$(MODS))
 
-# Complier/Linker settings
+# MASA and GRVY lib info
 PKGPATH := /work/00161/karl/stampede2/public
+GRVY_LIBS := $(PKGPATH)/grvy-intel-0.34/lib
+MASA_LIBS := $(PKGPATH)/masa-intel-0.50/lib
+
+# Complier/Linker settings
 FC      := ifort
-FLFLAGS := -g -L$(PKGPATH)/grvy-intel-0.34/lib
-FCFLAGS := -g -O0 -check all -warn all -fpe0 -r8 -I$(PKGPATH)/grvy-intel-0.34/lib
-LDLIBS  := -lgrvy -lgrvyf
+FLFLAGS := -g -L$(GRVY_LIBS) -L$(MASA_LIBS)
+FCFLAGS := -g -O0 -check all -warn all -r8 -I$(GRVY_LIBS) -I$(MASA_LIBS)
+LDLIBS  := -lgrvy -lgrvyf -lfmasa -lmasa
 PROGRAM := main
 PRG_OBJ := $(PROGRAM).o
 
-# Note for commenting out .SUFFIXES: no need for this old-fashioned rule (suffix rule)
-## Clean the suffixes
-#.SUFFIXES:
-#
-## Set the suffixes we are interested in
-#.SUFFIXES: .f90 .o
 
 # make without parameters will make first target found
 all: $(PROGRAM)
@@ -32,7 +30,7 @@ $(OBJS): %.o: %.f90
 # Linker
 $(PROGRAM): $(OBJS)
 	$(FC) $(FLFLAGS) $(LDLIBS) -o $@ $^ \
-		-Wl,-rpath,$(PKGPATH)/grvy-intel-0.34/lib
+		-Wl,-rpath,$(GRVY_LIBS),-rpath,$(MASA_LIBS)
 
 debug:
 	@echo "SRCS = $(SRCS)"
@@ -51,6 +49,9 @@ clean:
 # Dependencies
 $(PRG_OBJ): $(MOD_OBJS)
 Read_Input_Mod.o: Control_Parameters_Mod.o
-Initialize_Mod.o: Control_Parameters_Mod.o Solve_Common_Mod.o Get_Matrix_Mod.o
+Initialize_Mod.o: Control_Parameters_Mod.o Solve_Common_Mod.o Get_Matrix_Mod.o \
+	Get_Source_Mod.o Get_Mesh_Mod.o
 Solve_Common_Mod.o: Sparse_Matrix_Mod.o
-Get_Matrix_Mod.o: Sparse_Matrix_Mod.o
+Get_Matrix_Mod.o: Solve_Common_Mod.o
+Get_Mesh_Mod.o: Solve_Common_Mod.o Control_Parameters_Mod.o
+Get_Source_Mod.o: Solve_Common_Mod.o

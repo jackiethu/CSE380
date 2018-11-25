@@ -30,6 +30,9 @@ contains
         call grvy_input_fread_double("eps", eps, flag)
         call grvy_input_fread_int("max_iter", max_iter, flag)
 
+        ! close the file
+        call grvy_input_fclose
+
         ! in debug mode, output control parameters
         if (debug_Flag == 1) then
             write(*, "('----- CONTROL PARAMETERS -----')")
