@@ -19,6 +19,9 @@ LDLIBS  := -lgrvy -lgrvyf -lfmasa -lmasa
 PROGRAM := main
 PRG_OBJ := $(PROGRAM).o
 
+# create ../obj/ directory
+SH_RESULT := $(shell mkdir -p ../obj)
+
 
 # make without parameters will make first target found
 all: $(PROGRAM)
