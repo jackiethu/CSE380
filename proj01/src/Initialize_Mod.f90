@@ -73,8 +73,8 @@ contains
 
         end select
 
-        ! in debug mode, output matrix A and RHS term b
-        if (debug_Flag == 1) then
+        ! in verbose debug mode, output matrix A and RHS term b
+        if (debug_Flag == 2) then
             ! output A
             call A%Print_Matrix
 

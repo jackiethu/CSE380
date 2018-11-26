@@ -30,7 +30,8 @@ contains
 
         if (dimen == 2) y_Coord = x_Coord
         
-        if (debug_Flag == 1) then
+        ! in verbose debug mode, output mesh coordinates
+        if (debug_Flag == 2) then
             write(*,"('----- MESH -----')")
             do i = 0, num_Mesh
                 write(*,"('x_Coord(', I2 ,') = ', F6.3)") i, x_Coord(i)

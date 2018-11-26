@@ -34,12 +34,13 @@ contains
             case default
                 stop "invalid solver_Flag"
             end select
-            err = norm2(x_new - x)
+            err = norm2(x_new - x) / sqrt( real(n) )
             x = x_new
             if (err <= eps) exit
         end do
 
-        if (debug_Flag == 1) then
+        ! in debug mode, output iteration count and error
+        if (debug_Flag == 1 .or. debug_Flag == 2) then
             select case(solver_Flag)
             case(1)
                 write(*, "('----- JACOBI METHOD -----')")

@@ -34,7 +34,7 @@ contains
         call grvy_input_fclose
 
         ! in debug mode, output control parameters
-        if (debug_Flag == 1) then
+        if (debug_Flag == 1 .or. debug_Flag == 2) then
             write(*, "('----- CONTROL PARAMETERS -----')")
             write(*, "(A20, I2)") "dimen: ", dimen
             write(*, "(A20, F6.3)") "side_Length: ", side_Length

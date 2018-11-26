@@ -29,7 +29,7 @@ contains
         call masa_init("mytest", "heateq_1d_steady_const")
         call masa_set_param("k_0", k_0)
         call masa_set_param("A_x", 2*PI)
-        if (debug_Flag == 1) then
+        if (debug_Flag == 1 .or. debug_Flag == 2) then
             call masa_display_param
             write(*,*)
         end if
@@ -72,7 +72,7 @@ contains
         call masa_set_param("k_0", k_0)
         call masa_set_param("A_x", 2*PI)
         call masa_set_param("B_y", 2*PI)
-        if (debug_Flag == 1) then
+        if (debug_Flag == 1 .or. debug_Flag == 2) then
             call masa_display_param
             write(*,*)
         end if
