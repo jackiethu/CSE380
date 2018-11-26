@@ -1,6 +1,6 @@
 dimen = 1               # dimension of the problem (1 for 1D, 2 for 2D)
 side_Length = 1.0       # side length of domain
-num_Mesh = 256          # number of meshes in one direction
+num_Mesh =  64          # number of meshes in one direction
 
 order = 2               # order of discretization (2 or 4)
 solver_Flag = 1         # solver type (1 - Jacobi, 2 - Gauss-Seidel)
@@ -13,4 +13,4 @@ k_0 = 1.0               # thermal conductivity
 eps = 1.0e-12           # iterative solver tolerance
 max_iter = 250000       # max solver iterations
 print_iter = 1000       # print error every print_iter iterations
-output_file = 'sol_dim1_order2_J_mesh256.dat' # name of output file
+output_file = '../result/sol_dim1_order2_J_mesh64.dat' # name of output file
