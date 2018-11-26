@@ -29,6 +29,8 @@ contains
 
         call grvy_input_fread_double("eps", eps, flag)
         call grvy_input_fread_int("max_iter", max_iter, flag)
+        call grvy_input_fread_int("print_iter", print_iter, flag)
+        call grvy_input_fread_char("output_file", output_file, flag)
 
         ! close the file
         call grvy_input_fclose
@@ -47,8 +49,11 @@ contains
             write(*, "(A20, I2)") "debug_Flag: ", debug_Flag
 
             write(*, "(A20, F6.3)") "k_0: ", k_0
+
             write(*, "(A20, E10.3)") "eps: ", eps
             write(*, "(A20, I6)") "max_iter: ", max_iter
+            write(*, "(A20, I6)")  "print_iter: ", print_iter
+            write(*, "(A20, A50)") "output_file: ", output_file
             
             write(*,*)
         end if

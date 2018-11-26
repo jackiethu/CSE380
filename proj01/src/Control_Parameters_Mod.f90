@@ -17,5 +17,7 @@ module Control_Parameters_Mod
 
     real, save    :: eps ! iterative solver tolerance
     integer, save :: max_iter ! max solver iterations
+    integer, save :: print_iter ! print error every print_iter iterations
+    character(len = 100), save :: output_file ! output file name
 
 end module Control_Parameters_Mod

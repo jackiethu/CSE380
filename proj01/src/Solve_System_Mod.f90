@@ -8,7 +8,7 @@ contains
         use Solve_Common_Mod, only : A, x, b
         use Jacobi_GS_Mod, only : Update_Jacobi, Update_GS
         use Control_Parameters_Mod, only : eps, max_iter, solver_Flag, &
-                                           debug_Flag
+                                           debug_Flag, print_iter
         implicit none
 
         integer :: i, n
@@ -26,6 +26,7 @@ contains
 
         ! iteration
         do i = 1, max_iter
+            ! choose update scheme based on solver flag
             select case(solver_Flag)
             case(1)
                 x_new = Update_Jacobi(A, x, b)
@@ -34,13 +35,26 @@ contains
             case default
                 stop "invalid solver_Flag"
             end select
+
+            ! compute error and update x
             err = norm2(x_new - x) / sqrt( real(n) )
             x = x_new
+
+            ! in debug mode, output error every print_iter iterations
+            if (mod(i, print_iter) == 0) then
+                if (debug_Flag == 1 .or. debug_Flag == 2) then
+                    write(*,"('iteration count: ', I6)") i
+                    write(*,"('err = ', E13.6)") abs(err)
+                end if
+            end if      
+            
+            ! if error is less than eps, exit
             if (err <= eps) exit
         end do
 
         ! in debug mode, output iteration count and error
         if (debug_Flag == 1 .or. debug_Flag == 2) then
+            write(*,*)
             select case(solver_Flag)
             case(1)
                 write(*, "('----- JACOBI METHOD -----')")
@@ -52,6 +66,7 @@ contains
             
             write(*,"('iteration count: ', I6)") i
             write(*,"('err = ', E13.6)") abs(err)
+            write(*,*)
         end if
 
     end subroutine
