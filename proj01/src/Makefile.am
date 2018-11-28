@@ -1,6 +1,7 @@
-#PKGPATH = /work/00161/karl/stampede2/public
-MASA_LIBS = ${PKGPATH}/masa-intel-0.50/lib
-GRVY_LIBS = ${PKGPATH}/grvy-intel-0.34/lib
+# Set up library path
+PKGPATH = /work/00161/karl/stampede2/public
+MASA_LIBS = $(PKGPATH)/masa-intel-0.50/lib
+GRVY_LIBS = $(PKGPATH)/grvy-intel-0.34/lib
 
 # Compiler and linker flags
 AM_FCFLAGS = -r8 -I$(MASA_LIBS) -I$(GRVY_LIBS)
