@@ -7,6 +7,7 @@ contains
     
     function Update_Jacobi(A, x, b) result(x_New)
     ! compute one interative step with Jacobi method
+        use grvy
         implicit none
         real, dimension(:), intent(in)       :: x
         real, dimension(size(x))             :: x_New
@@ -17,6 +18,8 @@ contains
         real    :: sum  ! temp variable to store sum of A(i,j)*x(j)
         type(Sparse_Row_Type) :: row
         real    :: A_ii ! temp variable to store A(i,i)
+
+        call grvy_timer_begin('Solve_System/Jacobi Iteration')
 
         do i = 1, size(x)
             row = A%row(i)
@@ -32,11 +35,14 @@ contains
             x_New(i) = ( b(i) - sum ) / A_ii
         end do
 
+        call grvy_timer_end('Solve_System/Jacobi Iteration')
+
     end function Update_Jacobi
 
 
     function Update_GS(A, x, b) result(x_New)
     ! compute one interative step with Gauss-Seidel method
+        use grvy
         implicit none
         real, dimension(:), intent(in)       :: x
         real, dimension(size(x))             :: x_New
@@ -47,6 +53,8 @@ contains
         real    :: sum  ! temp variable to store sum of A(i,j)*x(j)
         type(Sparse_Row_Type) :: row
         real    :: A_ii ! temp variable to store A(i,i)
+
+        call grvy_timer_begin('Solve_System/Gauss-Seidel Iteration')
 
         do i = 1, size(x)
             row = A%row(i)
@@ -63,6 +71,8 @@ contains
             end do
             x_New(i) = ( b(i) - sum ) / A_ii
         end do
+
+        call grvy_timer_end('Solve_System/Gauss-Seidel Iteration')
 
     end function Update_GS
 

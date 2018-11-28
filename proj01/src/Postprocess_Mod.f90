@@ -8,6 +8,7 @@ contains
         use Control_Parameters_Mod, only : dimen, num_Mesh, verification_Flag, &
                                            output_file
         use masa
+        use grvy
         implicit none
         integer :: i, j ! temp variable in loops
         integer :: i_row ! row number in x
@@ -15,6 +16,8 @@ contains
         real :: error = 0 ! L2 error between our solution and MASA
         integer, parameter :: fileid = 10 ! fileid for output file
         integer :: stat ! iostat
+
+        call grvy_timer_begin('Postprocess')
 
         n = num_Mesh
 
@@ -63,6 +66,8 @@ contains
         write(fileid, *) n, error
 
         close(fileid)
+
+        call grvy_timer_end('Postprocess')
 
     end subroutine Postprocess
 

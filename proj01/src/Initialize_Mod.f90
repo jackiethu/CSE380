@@ -11,10 +11,13 @@ contains
                                    Get_Matrix_2D_Order2, Get_Matrix_2D_Order4 
         use Get_Source_Mod, only : Get_Source_1D, Get_Source_2D
         use Get_Mesh_Mod, only : Get_Mesh
+        use grvy
         implicit none
         integer :: dof  ! total degrees of freedom
         integer :: ierr ! error indicator
         integer :: i ! temp variable in loop
+
+        call grvy_timer_begin('Initialize')
         
         select case(dimen)
         case(1) ! 1D problem
@@ -85,6 +88,8 @@ contains
             end do
             write(*, *)
         end if
+
+        call grvy_timer_end('Initialize')
 
     end subroutine Initialize
 

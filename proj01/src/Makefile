@@ -56,8 +56,11 @@ clean:
    	Solve_Common_Mod.o Get_Matrix_Mod.o Get_Source_Mod.o Get_Mesh_Mod.o)
 ../obj/Solve_Common_Mod.o: ../obj/Sparse_Matrix_Mod.o
 ../obj/Get_Matrix_Mod.o: ../obj/Solve_Common_Mod.o
-../obj/Get_Mesh_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o Control_Parameters_Mod.o)
-../obj/Get_Source_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o Control_Parameters_Mod.o)
-../obj/Solve_System_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o Jacobi_GS_Mod.o \
-	Control_Parameters_Mod.o)
-../obj/Postprocess_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o Control_Parameters_Mod.o)
+../obj/Get_Mesh_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o \
+   	Control_Parameters_Mod.o)
+../obj/Get_Source_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o \
+   	Control_Parameters_Mod.o)
+../obj/Solve_System_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o \
+   	Jacobi_GS_Mod.o Control_Parameters_Mod.o)
+../obj/Postprocess_Mod.o: $(addprefix ../obj/, Solve_Common_Mod.o \
+   	Control_Parameters_Mod.o)

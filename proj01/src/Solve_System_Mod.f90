@@ -9,12 +9,15 @@ contains
         use Jacobi_GS_Mod, only : Update_Jacobi, Update_GS
         use Control_Parameters_Mod, only : eps, max_iter, solver_Flag, &
                                            debug_Flag, print_iter
+        use grvy
         implicit none
 
         integer :: i, n
         real, allocatable, dimension(:) :: x_new
         integer :: ierr ! error indicator
         real :: err ! difference in x between two iterations
+
+        call grvy_timer_begin('Solve_System')
 
         ! allocate x_new
         n = size(x)
@@ -26,6 +29,7 @@ contains
 
         ! iteration
         do i = 1, max_iter
+
             ! choose update scheme based on solver flag
             select case(solver_Flag)
             case(1)
@@ -49,7 +53,10 @@ contains
             end if      
             
             ! if error is less than eps, exit
-            if (err <= eps) exit
+            if (err <= eps) then
+                exit
+            end if
+
         end do
 
         ! in debug mode, output iteration count and error
@@ -68,6 +75,8 @@ contains
             write(*,"('err = ', E13.6)") abs(err)
             write(*,*)
         end if
+
+        call grvy_timer_end('Solve_System')
 
     end subroutine
 

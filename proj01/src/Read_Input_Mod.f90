@@ -11,6 +11,9 @@ contains
         character(len = 20) :: filename = "input.dat"
         integer :: flag
 
+        ! log time
+        call grvy_timer_begin('Read_Input')
+        
         ! initialize/read the file
         call grvy_input_fopen(filename, flag)
 
@@ -57,6 +60,8 @@ contains
             
             write(*,*)
         end if
+
+        call grvy_timer_end('Read_Input')
 
     end subroutine Read_Input
 
