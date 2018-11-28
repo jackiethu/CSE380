@@ -1,6 +1,8 @@
 *.mod
 *.o
 *~
+*.dat
 heateq
 tags
 result/
+Makefile
