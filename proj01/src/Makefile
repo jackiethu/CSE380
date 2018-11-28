@@ -16,7 +16,7 @@ FC      := ifort
 FLFLAGS := -g -L$(GRVY_LIBS) -L$(MASA_LIBS)
 FCFLAGS := -g -O0 -check all -warn all -r8 -I$(GRVY_LIBS) -I$(MASA_LIBS) -module ../obj
 LDLIBS  := -lgrvy -lgrvyf -lfmasa -lmasa
-PROGRAM := main
+PROGRAM := heateq
 PRG_OBJ := $(PROGRAM).o
 
 # create ../obj/ directory
