@@ -49,9 +49,9 @@ contains
         call grvy_input_fread_double("k_0", k_0, flag)
 
         call grvy_input_fread_double("eps", eps, flag)
-        call grvy_input_fread_int("max_iter", max_iter, flag)
-        call grvy_input_fread_int("print_iter", print_iter, flag)
-        call grvy_input_fread_char("output_file", output_file, flag)
+        call grvy_input_fread_int("max_Iter", max_Iter, flag)
+        call grvy_input_fread_int("print_Iter", print_Iter, flag)
+        call grvy_input_fread_char("output_File", output_File, flag)
 
         ! close the file
         call grvy_input_fclose
@@ -72,9 +72,9 @@ contains
             write(*, "(A20, F6.3)") "k_0: ", k_0
 
             write(*, "(A20, E10.3)") "eps: ", eps
-            write(*, "(A20, I6)") "max_iter: ", max_iter
-            write(*, "(A20, I6)")  "print_iter: ", print_iter
-            write(*, "(A20, A50)") "output_file: ", output_file
+            write(*, "(A20, I6)") "max_Iter: ", max_Iter
+            write(*, "(A20, I6)")  "print_Iter: ", print_Iter
+            write(*, "(A20, A50)") "output_File: ", output_File
             
             write(*,*)
         end if
