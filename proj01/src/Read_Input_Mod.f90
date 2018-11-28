@@ -9,11 +9,29 @@ contains
         use grvy
         implicit none
         character(len = 20) :: filename = "input.dat"
+        character(len = 20) :: string
+        integer :: string_Length
         integer :: flag
+        integer :: ierr ! does command argument exist?
+        integer :: alive ! if file exists or not
 
         ! log time
         call grvy_timer_begin('Read_Input')
         
+        ! get input file name from command line argument
+        ! if no arg supplied, use default "input.dat"
+        call get_command_argument(1, string, string_Length, ierr)
+        if (ierr == 0) then
+            filename = string
+        end if
+
+        ! check if input file exists
+        inquire(file = filename, exist = alive)
+        if (.not. alive) then
+            print *, filename, "doesn't exist!"
+            stop
+        end if
+
         ! initialize/read the file
         call grvy_input_fopen(filename, flag)
 
