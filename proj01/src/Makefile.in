@@ -182,7 +182,7 @@ GRVY_CFLAGS = @GRVY_CFLAGS@
 GRVY_DIR = @GRVY_DIR@
 GRVY_FCFLAGS = @GRVY_FCFLAGS@
 GRVY_FLIBS = @GRVY_FLIBS@
-GRVY_LIBS = ${PKGPATH}/grvy-intel-0.34/lib
+GRVY_LIBS = $(PKGPATH)/grvy-intel-0.34/lib
 GRVY_PREFIX = @GRVY_PREFIX@
 HAVE_GRVY = @HAVE_GRVY@
 HAVE_MASA = @HAVE_MASA@
@@ -200,9 +200,7 @@ MASA_CXXFLAGS = @MASA_CXXFLAGS@
 MASA_DIR = @MASA_DIR@
 MASA_FCFLAGS = @MASA_FCFLAGS@
 MASA_FC_LIBS = @MASA_FC_LIBS@
-
-#PKGPATH = /work/00161/karl/stampede2/public
-MASA_LIBS = ${PKGPATH}/masa-intel-0.50/lib
+MASA_LIBS = $(PKGPATH)/masa-intel-0.50/lib
 MASA_PREFIX = @MASA_PREFIX@
 MKDIR_P = @MKDIR_P@
 OBJEXT = @OBJEXT@
@@ -262,6 +260,9 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
+
+# Set up library path
+PKGPATH = /work/00161/karl/stampede2/public
 
 # Compiler and linker flags
 AM_FCFLAGS = -r8 -I$(MASA_LIBS) -I$(GRVY_LIBS)
