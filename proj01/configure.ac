@@ -22,4 +22,4 @@ AX_PATH_GRVY([0.32],[yes])
 
 # Checks for library functions.
 
-AC_OUTPUT(Makefile src/Makefile)
+AC_OUTPUT(Makefile src/Makefile test/Makefile)
