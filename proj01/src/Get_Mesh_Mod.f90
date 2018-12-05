@@ -12,6 +12,9 @@ contains
         integer :: ierr ! error indicator
         integer :: i ! temporary variable in loop
 
+        ! check if num_Mesh is positive
+        if (num_Mesh <= 0) stop "num_Mesh should be positive"
+
         ! allocate storage for coordinates
         allocate(x_Coord(0:num_Mesh), stat = ierr)
         if (ierr /= 0) stop "unable to allocate x_Coord"
