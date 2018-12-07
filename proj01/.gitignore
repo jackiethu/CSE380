@@ -1,8 +1,8 @@
 *.mod
 *.o
 *~
-*.dat
 heateq
+sol.dat
 tags
 result/
 Makefile

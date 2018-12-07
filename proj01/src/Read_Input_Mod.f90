@@ -8,8 +8,8 @@ contains
         use Control_Parameters_Mod
         use grvy
         implicit none
-        character(len = 20) :: filename = "input.dat"
-        character(len = 20) :: string
+        character(len = 30) :: filename = "input.dat"
+        character(len = 30) :: string
         integer :: string_Length
         integer :: flag
         integer :: ierr ! does command argument exist?

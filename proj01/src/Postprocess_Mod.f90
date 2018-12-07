@@ -55,7 +55,7 @@ contains
             write(*,*) error
         end if
 
-        ! write error to output file
+        ! write solution to output file
         open(unit = fileid, file = trim(output_file), status = 'replace', &
              iostat = stat)
         if (stat /= 0) then
@@ -63,7 +63,9 @@ contains
             stop
         end if
         
-        write(fileid, *) n, error
+        do i = 1, size(x)
+            write(fileid, "(E13.6)") x(i)
+        end do
 
         close(fileid)
 
