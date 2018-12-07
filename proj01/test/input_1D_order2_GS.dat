@@ -13,4 +13,4 @@ k_0 = 1.0               # thermal conductivity
 eps = 1.0e-12           # iterative solver tolerance
 max_Iter = 250000       # max solver iterations
 print_Iter = 1000       # print error every print_iter iterations
-output_File = '../test/sol.dat' # name of output file
+output_File = 'sol.dat' # name of output file
