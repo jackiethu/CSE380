@@ -4,9 +4,9 @@ MASA_LIBS = $(PKGPATH)/masa-gnu7-0.50/lib
 GRVY_LIBS = $(PKGPATH)/grvy-gnu7-0.34/lib
 
 # Compiler and linker flags
-AM_FCFLAGS = -fdefault-real-8 -I$(MASA_LIBS) -I$(GRVY_LIBS) --coverage
+AM_FCFLAGS = -fdefault-real-8 -I$(MASA_LIBS) -I$(GRVY_LIBS)
 AM_LDFLAGS = -L$(MASA_LIBS) -L$(GRVY_LIBS) -lgrvy -lgrvyf -lfmasa -lmasa \
-		-Wl,-rpath,$(GRVY_LIBS),-rpath,$(MASA_LIBS) --coverage
+		-Wl,-rpath,$(GRVY_LIBS),-rpath,$(MASA_LIBS)
 
 # Name for binary and source files
 bin_PROGRAMS = heateq

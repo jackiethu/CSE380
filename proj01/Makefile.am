@@ -4,7 +4,7 @@ EXTRA_DIST = CHANGES AUTHORS COPYING LICENSE dist_version
 
 
 # Code coverage
-#if CODE_COVERAGE_ENABLED
+if CODE_COVERAGE_ENABLED
 
 lcov_dir=$(top_builddir)/coverage/lcov
 # General philosophy is to maintain code coverage for the
@@ -26,4 +26,4 @@ lcov-reset:
 
 coverage: test lcov-reset check lcov-report
 
-#endif
+endif
