@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Project 1 - src/Jacobi_GS_Mod.f90</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - Jacobi_GS_Mod.f90<span style="font-size: 80%;"> (source / <a href="Jacobi_GS_Mod.f90.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Project 1</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">31</td>
+            <td class="headerCovTableEntry">31</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2018-12-09 20:57:30</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : ! module defining update scheme for Jacobi and GS iteration</a>
+<span class="lineNum">       2 </span>            : module Jacobi_GS_Mod
+<span class="lineNum">       3 </span>            :     use Sparse_Matrix_Mod
+<span class="lineNum">       4 </span>            :     implicit none
+<span class="lineNum">       5 </span>            : 
+<a name="6"><span class="lineNum">       6 </span>            : contains</a>
+<span class="lineNum">       7 </span>            :     
+<span class="lineNum">       8 </span><span class="lineCov">      17442 :     function Update_Jacobi(A, x, b) result(x_New)</span>
+<span class="lineNum">       9 </span>            :     ! compute one interative step with Jacobi method
+<span class="lineNum">      10 </span>            :         use grvy
+<span class="lineNum">      11 </span>            :         implicit none
+<span class="lineNum">      12 </span>            :         real, dimension(:), intent(in)       :: x
+<span class="lineNum">      13 </span>            :         real, dimension(size(x))             :: x_New
+<span class="lineNum">      14 </span>            :         real, dimension(:), intent(in)       :: b
+<span class="lineNum">      15 </span>            :         type(Sparse_Matrix_Type), intent(in) :: A 
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span>            :         integer :: i, j, k ! used for indexing matrix elements
+<span class="lineNum">      18 </span>            :         real    :: sum  ! temp variable to store sum of A(i,j)*x(j)
+<span class="lineNum">      19 </span><span class="lineCov">       8721 :         type(Sparse_Row_Type) :: row</span>
+<span class="lineNum">      20 </span>            :         real    :: A_ii ! temp variable to store A(i,i)
+<span class="lineNum">      21 </span>            : 
+<span class="lineNum">      22 </span><span class="lineCov">       8721 :         call grvy_timer_begin('Solve_System/Jacobi Iteration')</span>
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span><span class="lineCov">    4643010 :         do i = 1, size(x)</span>
+<span class="lineNum">      25 </span><span class="lineCov">    4634289 :             row = A%row(i)</span>
+<span class="lineNum">      26 </span><span class="lineCov">    4634289 :             sum = 0.0</span>
+<span class="lineNum">      27 </span><span class="lineCov">   25375992 :             do k = 1, row%num_Nonzero</span>
+<span class="lineNum">      28 </span><span class="lineCov">   20741703 :                 j = row%indices(k)</span>
+<span class="lineNum">      29 </span><span class="lineCov">   20741703 :                 if (j == i) then</span>
+<span class="lineNum">      30 </span><span class="lineCov">    4634289 :                     A_ii = row%values(k)</span>
+<span class="lineNum">      31 </span><span class="lineCov">    4634289 :                     cycle</span>
+<span class="lineNum">      32 </span>            :                 end if
+<span class="lineNum">      33 </span><span class="lineCov">   20741703 :                 sum = sum + row%values(k)*x(j)</span>
+<span class="lineNum">      34 </span>            :             end do
+<span class="lineNum">      35 </span><span class="lineCov">    4643010 :             x_New(i) = ( b(i) - sum ) / A_ii</span>
+<span class="lineNum">      36 </span>            :         end do
+<span class="lineNum">      37 </span>            : 
+<span class="lineNum">      38 </span><span class="lineCov">       8721 :         call grvy_timer_end('Solve_System/Jacobi Iteration')</span>
+<span class="lineNum">      39 </span>            : 
+<span class="lineNum">      40 </span><span class="lineCov">       8721 :     end function Update_Jacobi</span>
+<a name="41"><span class="lineNum">      41 </span>            : </a>
+<span class="lineNum">      42 </span>            : 
+<span class="lineNum">      43 </span><span class="lineCov">      19608 :     function Update_GS(A, x, b) result(x_New)</span>
+<span class="lineNum">      44 </span>            :     ! compute one interative step with Gauss-Seidel method
+<span class="lineNum">      45 </span>            :         use grvy
+<span class="lineNum">      46 </span>            :         implicit none
+<span class="lineNum">      47 </span>            :         real, dimension(:), intent(in)       :: x
+<span class="lineNum">      48 </span>            :         real, dimension(size(x))             :: x_New
+<span class="lineNum">      49 </span>            :         real, dimension(:), intent(in)       :: b
+<span class="lineNum">      50 </span>            :         type(Sparse_Matrix_Type), intent(in) :: A 
+<span class="lineNum">      51 </span>            : 
+<span class="lineNum">      52 </span>            :         integer :: i, j, k ! used for indexing matrix elements
+<span class="lineNum">      53 </span>            :         real    :: sum  ! temp variable to store sum of A(i,j)*x(j)
+<span class="lineNum">      54 </span><span class="lineCov">       9804 :         type(Sparse_Row_Type) :: row</span>
+<span class="lineNum">      55 </span>            :         real    :: A_ii ! temp variable to store A(i,i)
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span><span class="lineCov">       9804 :         call grvy_timer_begin('Solve_System/Gauss-Seidel Iteration')</span>
+<span class="lineNum">      58 </span>            : 
+<span class="lineNum">      59 </span><span class="lineCov">    5359896 :         do i = 1, size(x)</span>
+<span class="lineNum">      60 </span><span class="lineCov">    5350092 :             row = A%row(i)</span>
+<span class="lineNum">      61 </span><span class="lineCov">    5350092 :             sum = 0.0</span>
+<span class="lineNum">      62 </span><span class="lineCov">   38319376 :             do k = 1, row%num_Nonzero</span>
+<span class="lineNum">      63 </span><span class="lineCov">   32969284 :                 j = row%indices(k)</span>
+<span class="lineNum">      64 </span><span class="lineCov">   38319376 :                 if (j &lt; i) then</span>
+<span class="lineNum">      65 </span><span class="lineCov">   13809596 :                     sum = sum + row%values(k)*x_New(j)</span>
+<span class="lineNum">      66 </span><span class="lineCov">   19159688 :                 else if (j == i) then</span>
+<span class="lineNum">      67 </span><span class="lineCov">    5350092 :                     A_ii = row%values(k)</span>
+<span class="lineNum">      68 </span>            :                 else
+<span class="lineNum">      69 </span><span class="lineCov">   13809596 :                     sum = sum + row%values(k)*x(j)</span>
+<span class="lineNum">      70 </span>            :                 end if
+<span class="lineNum">      71 </span>            :             end do
+<span class="lineNum">      72 </span><span class="lineCov">    5359896 :             x_New(i) = ( b(i) - sum ) / A_ii</span>
+<span class="lineNum">      73 </span>            :         end do
+<span class="lineNum">      74 </span>            : 
+<span class="lineNum">      75 </span><span class="lineCov">       9804 :         call grvy_timer_end('Solve_System/Gauss-Seidel Iteration')</span>
+<span class="lineNum">      76 </span>            : 
+<span class="lineNum">      77 </span><span class="lineCov">       9804 :     end function Update_GS</span>
+<span class="lineNum">      78 </span>            : 
+<span class="lineNum">      79 </span>            : end module Jacobi_GS_Mod
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Project 1 - src/Sparse_Matrix_Mod.f90</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">src</a> - Sparse_Matrix_Mod.f90<span style="font-size: 80%;"> (source / <a href="Sparse_Matrix_Mod.f90.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Project 1</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntryLo">65.2 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2018-12-09 20:57:30</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">4</td>
+            <td class="headerCovTableEntry">7</td>
+            <td class="headerCovTableEntryLo">57.1 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : ! module defining sparse matrix, initializing functions,</a>
+<span class="lineNum">       2 </span>            : !     and a subroutine to output sparse matrix
+<span class="lineNum">       3 </span>            : module Sparse_Matrix_Mod
+<span class="lineNum">       4 </span>            :     implicit none
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            :     type :: Sparse_Row_Type
+<span class="lineNum">       7 </span>            :         integer :: num_Nonzero ! number of nonzero entries
+<span class="lineNum">       8 </span>            :         integer, allocatable :: indices(:) ! colomn indices for nonzero entries
+<span class="lineNum">       9 </span>            :         real, allocatable :: values(:) ! nonzero values
+<span class="lineNum">      10 </span>            :         contains
+<span class="lineNum">      11 </span>            :             procedure :: Init =&gt; Init_Row
+<span class="lineNum">      12 </span>            :     end type Sparse_Row_Type
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            :     type :: Sparse_Matrix_Type ! only support square matrix
+<span class="lineNum">      15 </span>            :         integer :: n ! the dimension of the matrix is n*n
+<span class="lineNum">      16 </span>            :         type(Sparse_Row_Type), allocatable :: row(:)
+<span class="lineNum">      17 </span>            :         contains
+<span class="lineNum">      18 </span>            :             procedure :: Init =&gt; Init_Matrix
+<span class="lineNum">      19 </span>            :             procedure :: Print_Matrix
+<span class="lineNum">      20 </span>            :     end type Sparse_Matrix_Type
+<span class="lineNum">      21 </span>            : 
+<a name="22"><span class="lineNum">      22 </span>            : contains</a>
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span><span class="lineCov">       3366 :     subroutine Init_Row(this, num_Nonzero, indices, values)</span>
+<span class="lineNum">      25 </span>            :         implicit none
+<span class="lineNum">      26 </span>            :         class(Sparse_Row_Type), intent(out) :: this
+<span class="lineNum">      27 </span>            :         integer, intent(in) :: num_Nonzero
+<span class="lineNum">      28 </span>            :         integer, intent(in) :: indices(num_Nonzero)
+<span class="lineNum">      29 </span>            :         real, intent(in) :: values(num_Nonzero)
+<span class="lineNum">      30 </span>            :         integer :: ierr ! indicator for error
+<span class="lineNum">      31 </span>            : 
+<span class="lineNum">      32 </span><span class="lineCov">       3366 :         this%num_Nonzero = num_Nonzero</span>
+<span class="lineNum">      33 </span><span class="lineCov">       3366 :         allocate( this%indices(num_Nonzero), stat = ierr )</span>
+<span class="lineNum">      34 </span><span class="lineCov">       3366 :         if (ierr /= 0) stop &quot;Allocation error: Init_Row&quot;</span>
+<span class="lineNum">      35 </span><span class="lineCov">       3366 :         allocate( this%values(num_Nonzero), stat = ierr )</span>
+<span class="lineNum">      36 </span><span class="lineCov">       3366 :         if (ierr /= 0) stop &quot;Allocation error: Init_Row&quot;</span>
+<span class="lineNum">      37 </span><span class="lineCov">       3366 :         this%indices = indices</span>
+<span class="lineNum">      38 </span><span class="lineCov">       3366 :         this%values = values</span>
+<a name="39"><span class="lineNum">      39 </span><span class="lineCov">       3366 :     end subroutine Init_Row</span></a>
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span><span class="lineCov">          6 :     subroutine Init_Matrix(this, n)</span>
+<span class="lineNum">      42 </span>            :         implicit none
+<span class="lineNum">      43 </span>            :         class(Sparse_Matrix_Type), intent(out) :: this
+<span class="lineNum">      44 </span>            :         integer, intent(in) :: n
+<span class="lineNum">      45 </span>            :         integer :: ierr ! error indicator
+<span class="lineNum">      46 </span>            : 
+<span class="lineNum">      47 </span><span class="lineCov">          6 :         this%n = n</span>
+<span class="lineNum">      48 </span><span class="lineCov">          6 :         allocate( this%row(n), stat = ierr )</span>
+<span class="lineNum">      49 </span><span class="lineCov">          6 :         if (ierr /= 0) stop &quot;Allocation error: Init_Matrix&quot;</span>
+<a name="50"><span class="lineNum">      50 </span><span class="lineCov">          6 :     end subroutine Init_Matrix</span></a>
+<span class="lineNum">      51 </span>            : 
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 :     subroutine Print_Matrix(this)</span>
+<span class="lineNum">      53 </span>            :         implicit none
+<span class="lineNum">      54 </span>            :         class(Sparse_Matrix_Type), intent(in) :: this
+<span class="lineNum">      55 </span>            :         integer :: i, j, k
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :         write(*,&quot;('----- MATRIX A -----')&quot;)</span>
+<span class="lineNum">      58 </span><span class="lineNoCov">          0 :         do i = 1, this%n ! loop through rows of matrix</span>
+<span class="lineNum">      59 </span><span class="lineNoCov">          0 :             do k = 1, this%row(i)%num_Nonzero</span>
+<span class="lineNum">      60 </span><span class="lineNoCov">          0 :                 j = this%row(i)%indices(k)</span>
+<span class="lineNum">      61 </span>            :                 write(*,&quot;('(', I3, ',', I3, '):', F7.4)&quot;) &amp;
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :                     i, j, this%row(i)%values(k)</span>
+<span class="lineNum">      63 </span>            :             end do
+<span class="lineNum">      64 </span>            :         end do
+<span class="lineNum">      65 </span><span class="lineNoCov">          0 :         write(*,*)</span>
+<a name="66"><span class="lineNum">      66 </span><span class="lineNoCov">          0 :     end subroutine Print_Matrix</span></a>
+<span class="lineNum">      67 </span>            : 
+<span class="lineNum">      68 </span><span class="lineCov">       3372 : end module Sparse_Matrix_Mod</span>
+<span class="lineNum">      69 </span>            : 
+<span class="lineNum">      70 </span>            : 
+<span class="lineNum">      71 </span>            : !program test
+<span class="lineNum">      72 </span>            : !    use Jacobi_GS_Mod
+<span class="lineNum">      73 </span>            : !    implicit none
+<span class="lineNum">      74 </span>            : !
+<span class="lineNum">      75 </span>            : !    type(Sparse_Matrix_Type) :: mat
+<span class="lineNum">      76 </span>            : !    integer :: i
+<span class="lineNum">      77 </span>            : !    integer :: indices1(2) = [1, 2], indices2(1) = 1
+<span class="lineNum">      78 </span>            : !    real :: values1(2) = [1.2, 2.5], values2(1) = 3.6
+<span class="lineNum">      79 </span>            : !    
+<span class="lineNum">      80 </span>            : !    call mat%Init(2)
+<span class="lineNum">      81 </span>            : !    call mat%row(1)%Init(2, indices1, values1)
+<span class="lineNum">      82 </span>            : !    call mat%row(2)%Init(1, indices2, values2)
+<span class="lineNum">      83 </span>            : !    do i = 1, 2
+<span class="lineNum">      84 </span>            : !        print *, &quot;row&quot;, i
+<span class="lineNum">      85 </span>            : !        print *, &quot;num_Nonzero: &quot;, mat%row(i)%num_Nonzero
+<span class="lineNum">      86 </span>            : !        print *, &quot;indices: &quot;, mat%row(i)%indices
+<span class="lineNum">      87 </span>            : !        print *, &quot;values: &quot;, mat%row(i)%values
+<span class="lineNum">      88 </span>            : !        print *
+<span class="lineNum">      89 </span>            : !    end do
+<span class="lineNum">      90 </span>            : !
+<span class="lineNum">      91 </span>            : !end program test
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
