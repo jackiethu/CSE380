@@ -1,5 +1,6 @@
 #!/bin/sh
-module load intel boost
+module swap intel gnu7
+module load boost
 export PKGPATH=/work/00161/karl/stampede2/public/
-./configure FC=ifort --with-masa=$PKGPATH/masa-intel-0.50 \
-    --with-grvy=$PKGPATH/grvy-intel-0.34
+./configure FC=gfortran FCFLAGS='-g -O0' --with-masa=$PKGPATH/masa-gnu7-0.50 \
+    --with-grvy=$PKGPATH/grvy-gnu7-0.34 CODE_COVERAGE_ENABLED=1

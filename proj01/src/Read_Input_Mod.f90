@@ -13,7 +13,7 @@ contains
         integer :: string_Length
         integer :: flag
         integer :: ierr ! does command argument exist?
-        integer :: alive ! if file exists or not
+        logical :: alive ! if file exists or not
 
         ! log time
         call grvy_timer_begin('Read_Input')
