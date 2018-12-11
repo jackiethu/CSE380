@@ -16,6 +16,7 @@ AC_PROG_FC
 # Checks for libraries.
 AX_PATH_MASA([0.30],[yes])
 AX_PATH_GRVY([0.32],[yes])
+AX_PATH_HDF5([1.8.0],[yes])
 
 # Check for code coverage
 AX_CODE_COVERAGE
