@@ -9,11 +9,18 @@ AM_LDFLAGS = -L$(MASA_LIBS) -L$(GRVY_LIBS) -lgrvy -lgrvyf -lfmasa -lmasa \
 		-Wl,-rpath,$(GRVY_LIBS),-rpath,$(MASA_LIBS) \
 		$(HDF5_FLIBS)
 
+# PETSc flags
+if PETSC_ENABLED
+  include $(PETSC_DIR)/lib/petsc/conf/variables
+  AM_FCFLAGS += -DINCLUDE_PETSC $(PETSC_FCPPFLAGS)
+  AM_LDFLAGS += -L$(PETSC_LIB_DIR) $(PETSC_LIB_BASIC)
+endif
+
 # Name for binary and source files
 bin_PROGRAMS = heateq
-heateq_SOURCES = Control_Parameters_Mod.f90 Get_Source_Mod.f90 main.f90 Solve_Common_Mod.f90 \
-	Get_Matrix_Mod.f90 Initialize_Mod.f90 Postprocess_Mod.f90 Solve_System_Mod.f90 \
-	Get_Mesh_Mod.f90 Jacobi_GS_Mod.f90 Read_Input_Mod.f90 Sparse_Matrix_Mod.f90
+heateq_SOURCES = Control_Parameters_Mod.F90 Get_Source_Mod.F90 main.F90 Solve_Common_Mod.F90 \
+	Get_Matrix_Mod.F90 Initialize_Mod.F90 Postprocess_Mod.F90 Solve_System_Mod.F90 \
+	Get_Mesh_Mod.F90 Jacobi_GS_Mod.F90 Read_Input_Mod.F90 Sparse_Matrix_Mod.F90
 
 # We need to write clean ourselves because the default one doesn't rm *.mod
 clean:
