@@ -121,7 +121,7 @@ contains
           print*,'Unable to initialize PETSc'
           stop
         endif
-        print *, "Initialization finished"
+        !print *, "Initialization finished"
 
         !
         ! create vectors
@@ -172,7 +172,7 @@ contains
         ! then create matrix
         call MatCreateSeqAIJ(PETSC_COMM_SELF, n, n, num_Nonzero, &
             PETSC_NULL_INTEGER, Matrix, ierr)
-        print *, "Matrix created"
+        !print *, "Matrix created"
 
         ! set matrix entries
         do i = 1, n ! set mat values by row
@@ -195,12 +195,21 @@ contains
         call KSPCreate(PETSC_COMM_SELF, Solve, ierr)
         call KSPSetOperators(Solve, Matrix, Matrix, ierr)
 
+        call KSPSetTolerances(Solve, 1.e-7, PETSC_DEFAULT_REAL, &
+            PETSC_DEFAULT_REAL, PETSC_DEFAULT_INTEGER, ierr)
+
+        call KSPSetFromOptions(Solve, ierr)
+        call KSPSetUp(Solve, ierr)
+
         !
         ! solve linear system
         !
         call KSPSolve(Solve, Rhs, Soln, ierr)
 
         ! view solution
+        if (debug_Flag == 1) then
+            call KSPView(Solve, PETSC_VIEWER_STDOUT_SELF, ierr)
+        end if
         if (debug_Flag == 2) then
             call VecView(Soln, PETSC_VIEWER_STDOUT_SELF, ierr)
         end if
